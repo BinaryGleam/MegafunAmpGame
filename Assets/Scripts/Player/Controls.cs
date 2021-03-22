@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Controls : MonoBehaviour
 {
+    private Rigidbody2D myRigidbody;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         
     }
@@ -14,5 +15,10 @@ public class Controls : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void HorizontalMovement()
+	{
+        float horizontal = Input.GetAxisRaw("Horizontal");
     }
 }
