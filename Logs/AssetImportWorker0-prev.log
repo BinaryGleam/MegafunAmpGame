@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.0f1 (c7b5465681fb) revision 13088070'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Enterprise 2016 LTSB; OS build 14393.4283; Version 1607; 64bit' Language: 'fr' Physical Memory: 8151 MB
+OS: 'Windows 10 Pro; OS build 18363.1440; Version 1909; 64bit' Language: 'fr' Physical Memory: 16324 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,726 +11,94 @@ C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/clair/Documents/GitHub/MegafunAmpGame
+C:/Users/lukni/Documents/Programmation/MegafunAmpGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57204
-Successfully changed project path to: C:/Users/clair/Documents/GitHub/MegafunAmpGame
-C:/Users/clair/Documents/GitHub/MegafunAmpGame
+50987
+Successfully changed project path to: C:/Users/lukni/Documents/Programmation/MegafunAmpGame
+C:/Users/lukni/Documents/Programmation/MegafunAmpGame
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 30.03 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 80.90 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/clair/Documents/GitHub/MegafunAmpGame/Assets
+[Subsystems] Discovering subsystems at path C:/Users/lukni/Documents/Programmation/MegafunAmpGame/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
+    Renderer: NVIDIA GeForce RTX 2070 (ID=0x1f02)
     Vendor:   
-    VRAM:     6055 MB
-    Driver:   27.21.14.5206
+    VRAM:     8031 MB
+    Driver:   27.21.14.6079
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56572
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56112
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001630 seconds.
+Registered in 0.004293 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 29.65 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 52.68 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.925 seconds
+- Completed reload, in  1.154 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000846 seconds.
+Registered in 0.002322 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 30.13 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 50.04 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.752 seconds
+- Completed reload, in  1.032 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1956 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 89.6 MB.
-System memory in use after: 89.7 MB.
+Unloading 3098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.9 MB.
+System memory in use after: 134.0 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2403.
-Total: 1.950475 ms (FindLiveObjects: 0.213821 ms CreateObjectMapping: 0.098499 ms MarkObjects: 1.577447 ms  DeleteObjects: 0.059733 ms)
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 3543.
+Total: 3.784200 ms (FindLiveObjects: 0.458200 ms CreateObjectMapping: 0.141700 ms MarkObjects: 3.002300 ms  DeleteObjects: 0.180600 ms)
 
 ========================================================================
 Received Import Request.
   path: Assets/Sprite/Basic/SP_Circle.png
   artifactKey: Guid(ce53a2ec98d6c6c42b994d4f1a5d4917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprite/Basic/SP_Circle.png using Guid(ce53a2ec98d6c6c42b994d4f1a5d4917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36aa302a88f4c9ea5914eced330da2b0') in 0.086550 seconds
-  Import took 0.089443 seconds .
+Start importing Assets/Sprite/Basic/SP_Circle.png using Guid(ce53a2ec98d6c6c42b994d4f1a5d4917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89fdb8b4d86ccd36f4909f257abcfd09') in 0.216784 seconds
+  Import took 0.222498 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000321 seconds.
+  Time since last request: 0.000286 seconds.
   path: Assets/Sprite/Basic/SP_Square.png
   artifactKey: Guid(c94fa7946ff4a4a4ea389625f0689e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprite/Basic/SP_Square.png using Guid(c94fa7946ff4a4a4ea389625f0689e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fee00ddd0194faa9be8c0e70b9fb8e89') in 0.010270 seconds
-  Import took 0.013764 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 134.775473 seconds.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42baae205c97e3337697759514652acd') in 0.008143 seconds
-  Import took 0.012449 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001080 seconds.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42baae205c97e3337697759514652acd') in 0.002339 seconds
-  Import took 0.005970 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.695216 seconds.
-  path: Packages/com.unity.2d.animation
-  artifactKey: Guid(bb5c94055a953b6081dfc49350569eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation using Guid(bb5c94055a953b6081dfc49350569eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d0e843e78e8bd1a9c5ce41e4230fb72') in 0.007576 seconds
-  Import took 0.010538 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.152121 seconds.
-  path: Packages/com.unity.2d.common
-  artifactKey: Guid(a5dcdac2498697dc1122d527a3e49621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.common using Guid(a5dcdac2498697dc1122d527a3e49621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43303895032240c862614161bfb4be23') in 0.005832 seconds
-  Import took 0.008724 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.202321 seconds.
-  path: Packages/com.unity.2d.path
-  artifactKey: Guid(b408cb5710d3960a737996681ad0c300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.path using Guid(b408cb5710d3960a737996681ad0c300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc6fd60d28a77c26c454b8b4805129d1') in 0.005891 seconds
-  Import took 0.008876 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.168599 seconds.
-  path: Packages/com.unity.2d.pixel-perfect
-  artifactKey: Guid(915dabe870142d4eb34a5dbf62d6df68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.pixel-perfect using Guid(915dabe870142d4eb34a5dbf62d6df68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d2cdcf32b931bcf0be6cdd79307053') in 0.005655 seconds
-  Import took 0.009257 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.160776 seconds.
-  path: Packages/com.unity.2d.psdimporter
-  artifactKey: Guid(89fcc900e56380574db74dc98ed08bf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.psdimporter using Guid(89fcc900e56380574db74dc98ed08bf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd66d1cbcc24fc97a10db87f6488566b1') in 0.005474 seconds
-  Import took 0.008442 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.174450 seconds.
-  path: Packages/com.unity.2d.sprite
-  artifactKey: Guid(0901a6b758d060e9422c4f8d588d5895) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite using Guid(0901a6b758d060e9422c4f8d588d5895) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c2fcb569f11df832374a5498b210d20') in 0.006055 seconds
-  Import took 0.009512 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.163373 seconds.
-  path: Packages/com.unity.2d.spriteshape
-  artifactKey: Guid(9f9e809966b8f16f626c5fa29105d97a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape using Guid(9f9e809966b8f16f626c5fa29105d97a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c1e1a1e9888d146258e2720928ee73a') in 0.005625 seconds
-  Import took 0.008726 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.169227 seconds.
-  path: Packages/com.unity.2d.tilemap
-  artifactKey: Guid(4e00cf00a7281e0d7ee16a9f76f3c3bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.tilemap using Guid(4e00cf00a7281e0d7ee16a9f76f3c3bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e240365609116e700ca0b2e15f91ef4e') in 0.005605 seconds
-  Import took 0.008647 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.175129 seconds.
-  path: Packages/com.unity.cinemachine
-  artifactKey: Guid(c19eb9a4b328654bd4ca551e1c34b76c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.cinemachine using Guid(c19eb9a4b328654bd4ca551e1c34b76c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e9b58d1c6f7de3cc6edd7a00cb2cf88') in 0.005736 seconds
-  Import took 0.008688 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.162428 seconds.
-  path: Packages/com.unity.ext.nunit
-  artifactKey: Guid(25a477c2f24db8778a4179421a32cc21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.ext.nunit using Guid(25a477c2f24db8778a4179421a32cc21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8917083e3461eeafe7ca469e4a74fc33') in 0.005738 seconds
-  Import took 0.008603 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.170302 seconds.
-  path: Packages/com.unity.ide.rider
-  artifactKey: Guid(ea5aa18a49e4f29d74984ea0ea11a238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.ide.rider using Guid(ea5aa18a49e4f29d74984ea0ea11a238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7486e3e588c99355a69f75deda10428') in 0.005495 seconds
-  Import took 0.008413 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.191288 seconds.
-  path: Packages/com.unity.mathematics
-  artifactKey: Guid(795e97ad99e2f6ffd2060ae1983b6f25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.mathematics using Guid(795e97ad99e2f6ffd2060ae1983b6f25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '376c6aba9b1750a73597a29836e8e483') in 0.005726 seconds
-  Import took 0.008750 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.325772 seconds.
-  path: Packages/com.unity.test-framework
-  artifactKey: Guid(6023f2b823fc19b4e4a90875281ff117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.test-framework using Guid(6023f2b823fc19b4e4a90875281ff117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe18088e2017ea0fa000f5128852680f') in 0.005484 seconds
-  Import took 0.008417 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.177629 seconds.
-  path: Packages/com.unity.textmeshpro
-  artifactKey: Guid(cabaa672b0e3ee91fa7b6da4daab7970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.textmeshpro using Guid(cabaa672b0e3ee91fa7b6da4daab7970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0fc6b7a6413814fcf90a2bc72c54982') in 0.005679 seconds
-  Import took 0.008687 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.163501 seconds.
-  path: Packages/com.unity.timeline
-  artifactKey: Guid(a4610cf559d77b9f256416d9ccaeac55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.timeline using Guid(a4610cf559d77b9f256416d9ccaeac55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1480e27dda673c051f16cd7230addf5f') in 0.005848 seconds
-  Import took 0.008837 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.199018 seconds.
-  path: Packages/com.unity.collab-proxy
-  artifactKey: Guid(1adad61bfb44214ee3e887b5febc4396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy using Guid(1adad61bfb44214ee3e887b5febc4396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b19b0db24d65f5912a42389f92f41f9e') in 0.005551 seconds
-  Import took 0.008507 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.286461 seconds.
-  path: Packages/com.unity.ugui
-  artifactKey: Guid(8f7652e09069a1943278893d4264401e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.ugui using Guid(8f7652e09069a1943278893d4264401e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6421d84b259b4f59586faa4d8da16bd') in 0.006014 seconds
-  Import took 0.008905 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.421188 seconds.
-  path: Packages/com.unity.ide.vscode
-  artifactKey: Guid(1c61a04a5b7737c4d16673d64be4194e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.ide.vscode using Guid(1c61a04a5b7737c4d16673d64be4194e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2132f6ccd583de0605e40d9a39f26e9c') in 0.006194 seconds
-  Import took 0.009133 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.742495 seconds.
-  path: Packages/com.unity.ide.visualstudio
-  artifactKey: Guid(9db636ca49aa246019dd93b7c8b689f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.ide.visualstudio using Guid(9db636ca49aa246019dd93b7c8b689f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40dcf2de4826b4469fdbd1e2ddf0352b') in 0.005932 seconds
-  Import took 0.008985 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000983 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.665 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1946 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.4 MB.
-System memory in use after: 92.4 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2414.
-Total: 2.123823 ms (FindLiveObjects: 0.433493 ms CreateObjectMapping: 0.128000 ms MarkObjects: 1.512837 ms  DeleteObjects: 0.048518 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 199.073931 seconds.
-  path: Assets/colorblind/RGB_Colorcube_Corner_White.png
-  artifactKey: Guid(26c405e556d716c4db1330485dd49ff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/colorblind/RGB_Colorcube_Corner_White.png using Guid(26c405e556d716c4db1330485dd49ff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ded1565cde61863c3763663c1f3570bb') in 0.061445 seconds
-  Import took 0.064603 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000932 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.663 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1944 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.2 MB.
-System memory in use after: 92.3 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2418.
-Total: 1.945355 ms (FindLiveObjects: 0.309638 ms CreateObjectMapping: 0.101181 ms MarkObjects: 1.519176 ms  DeleteObjects: 0.014385 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000852 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.675 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1946 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.4 MB.
-System memory in use after: 92.5 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2423.
-Total: 1.829302 ms (FindLiveObjects: 0.185539 ms CreateObjectMapping: 0.074362 ms MarkObjects: 1.521371 ms  DeleteObjects: 0.046568 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 804.681236 seconds.
-  path: Assets/colorblind/RGB_Colorcube_Corner_White.png
-  artifactKey: Guid(26c405e556d716c4db1330485dd49ff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/colorblind/RGB_Colorcube_Corner_White.png using Guid(26c405e556d716c4db1330485dd49ff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6d7534bb434d66badf20c5bc47bab89') in 0.051877 seconds
-  Import took 0.055295 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 37.692350 seconds.
-  path: Assets/Plugin
-  artifactKey: Guid(3b100c574515aa549ac4aa9a2d7717c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugin using Guid(3b100c574515aa549ac4aa9a2d7717c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53c10a182325a0b8445fa899c8cbc480') in 0.006815 seconds
-  Import took 0.009641 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000894 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.671 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1946 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.4 MB.
-System memory in use after: 92.5 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2428.
-Total: 1.914391 ms (FindLiveObjects: 0.240396 ms CreateObjectMapping: 0.091429 ms MarkObjects: 1.537462 ms  DeleteObjects: 0.044373 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.790180 seconds.
-  path: Assets/Plugin/colorblind
-  artifactKey: Guid(735858fed48f9734ea5917c5df2a3ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugin/colorblind using Guid(735858fed48f9734ea5917c5df2a3ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '005585e80b5fdd68b67f3c45c3ecf616') in 0.007366 seconds
-  Import took 0.010140 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.230015 seconds.
-  path: Assets/Plugin/colorblind/colorblindSettings.lighting
-  artifactKey: Guid(19f0a24bfe50ed445b56c109a6e77831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugin/colorblind/colorblindSettings.lighting using Guid(19f0a24bfe50ed445b56c109a6e77831) Importer(815301076,1909f56bfc062723c751e8b465ee728b) LightingSettings: switching bake backend from 1 to 0.
- -> (artifact id: 'eba114ebdd9474349f26cade68f37618') in 0.014974 seconds
-  Import took 0.017906 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.011066 seconds.
-  path: Assets/Plugin/colorblind/colorblindSettings.lighting
-  artifactKey: Guid(19f0a24bfe50ed445b56c109a6e77831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugin/colorblind/colorblindSettings.lighting using Guid(19f0a24bfe50ed445b56c109a6e77831) Importer(815301076,1909f56bfc062723c751e8b465ee728b) LightingSettings: switching bake backend from 1 to 0.
- -> (artifact id: 'eba114ebdd9474349f26cade68f37618') in 0.002854 seconds
-  Import took 0.006157 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.691421 seconds.
-  path: Assets/Plugin/colorblind/ColorBlindFilter.cs
-  artifactKey: Guid(75ef3d3a90250f940860f4733f93ce6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugin/colorblind/ColorBlindFilter.cs using Guid(75ef3d3a90250f940860f4733f93ce6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '272310e77f8c0098d105aa24d7dc591d') in 0.010153 seconds
-  Import took 0.013141 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.015616 seconds.
-  path: Assets/Plugin/colorblind/ColorBlindFilter.cs
-  artifactKey: Guid(75ef3d3a90250f940860f4733f93ce6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugin/colorblind/ColorBlindFilter.cs using Guid(75ef3d3a90250f940860f4733f93ce6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '272310e77f8c0098d105aa24d7dc591d') in 0.002591 seconds
-  Import took 0.005526 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.599179 seconds.
-  path: Assets/Plugin/colorblind/colorblind.unity
-  artifactKey: Guid(17c0e4efd40d81842a101a759264487e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugin/colorblind/colorblind.unity using Guid(17c0e4efd40d81842a101a759264487e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eeea86d5923b286e2ac91910cd0493e') in 0.008941 seconds
-  Import took 0.011830 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.604401 seconds.
-  path: Assets/Plugin/colorblind/ChannelMixer.shader
-  artifactKey: Guid(23b227a99d5937e4d880bc3ef49d02f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugin/colorblind/ChannelMixer.shader using Guid(23b227a99d5937e4d880bc3ef49d02f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '848980b4c895b1cfec985632e9f7d1b6') in 0.008519 seconds
-  Import took 0.011405 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.358272 seconds.
-  path: Assets/Plugin/colorblind/ChannelMixer.shader
-  artifactKey: Guid(23b227a99d5937e4d880bc3ef49d02f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugin/colorblind/ChannelMixer.shader using Guid(23b227a99d5937e4d880bc3ef49d02f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '848980b4c895b1cfec985632e9f7d1b6') in 0.002946 seconds
-  Import took 0.005950 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000949 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.878 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1946 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.5 MB.
-System memory in use after: 92.6 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2432.
-Total: 2.117241 ms (FindLiveObjects: 0.244297 ms CreateObjectMapping: 0.119954 ms MarkObjects: 1.687161 ms  DeleteObjects: 0.064853 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 18574.588564 seconds.
-  path: Packages/com.unity.2d.spriteshape/package.json
-  artifactKey: Guid(4eabc3d1ad1424372b03cfc117521e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/package.json using Guid(4eabc3d1ad1424372b03cfc117521e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b75286fe3111ce866f35ff80a3b91bd') in 0.020717 seconds
-  Import took 0.024172 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.058593 seconds.
-  path: Packages/com.unity.2d.sprite/package.json
-  artifactKey: Guid(7dc5f1e5d04ac8549ac21802071e983b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/package.json using Guid(7dc5f1e5d04ac8549ac21802071e983b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06de123f0bbb32458361dc07305f28d7') in 0.002973 seconds
-  Import took 0.006091 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.465826 seconds.
-  path: Packages/com.unity.2d.sprite/Tests
-  artifactKey: Guid(7e2656e167a517b4d8552ba38f4b7bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Tests using Guid(7e2656e167a517b4d8552ba38f4b7bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2decc2f05fd8b2fa1811772f1a94642f') in 0.005789 seconds
-  Import took 0.008778 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.103413 seconds.
-  path: Packages/com.unity.2d.sprite/Tests/Editor
-  artifactKey: Guid(dcc63292bf8cfd543b11bfdebe99cd02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Tests/Editor using Guid(dcc63292bf8cfd543b11bfdebe99cd02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f81ef6a8f2efd80c2340f066114c806') in 0.005714 seconds
-  Import took 0.008633 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.101218 seconds.
-  path: Packages/com.unity.2d.sprite/Tests/Editor/Unity.2D.Sprite.Package.EditorTests.asmdef
-  artifactKey: Guid(52648b72c7bef2040bf0cfa8dd0f74da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Tests/Editor/Unity.2D.Sprite.Package.EditorTests.asmdef using Guid(52648b72c7bef2040bf0cfa8dd0f74da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd7d81cf0dafbf2ecf1c9e4880c56cec') in 0.006821 seconds
-  Import took 0.009607 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.399493 seconds.
-  path: Packages/com.unity.2d.spriteshape/Tests
-  artifactKey: Guid(cf00ad4c95f59411ba959a51a6c8be34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Tests using Guid(cf00ad4c95f59411ba959a51a6c8be34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36b49ce66872d7c915bf97402cd7fb46') in 0.002381 seconds
-  Import took 0.005338 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.255472 seconds.
-  path: Packages/com.unity.2d.spriteshape/Tests/Editor
-  artifactKey: Guid(dd488b980da89f643bac3ae9479c12c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Tests/Editor using Guid(dd488b980da89f643bac3ae9479c12c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '099cf03d0937ab3e6856155e204d3555') in 0.002463 seconds
-  Import took 0.005659 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.071260 seconds.
-  path: Packages/com.unity.2d.spriteshape/Tests/Editor/Unity.2D.SpriteShape.EditorTests.asmdef
-  artifactKey: Guid(03bfc083748b8452197dde3b8ea7f575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Tests/Editor/Unity.2D.SpriteShape.EditorTests.asmdef using Guid(03bfc083748b8452197dde3b8ea7f575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3d2617c0e9aad6f095e608333f44b5c') in 0.006042 seconds
-  Import took 0.009129 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.547180 seconds.
-  path: Packages/com.unity.2d.spriteshape/Editor
-  artifactKey: Guid(4103ad8b83780496d93e0fabf89b806e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Editor using Guid(4103ad8b83780496d93e0fabf89b806e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eb8e377f54a35a18f709d7267790ccd') in 0.002662 seconds
-  Import took 0.005418 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.098006 seconds.
-  path: Packages/com.unity.2d.spriteshape/Editor/Unity.2D.SpriteShape.Editor.asmdef
-  artifactKey: Guid(bfbb4a459210651499d21f444f9b55fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Editor/Unity.2D.SpriteShape.Editor.asmdef using Guid(bfbb4a459210651499d21f444f9b55fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87c428ecb9233ac963eeb7acbdf34f1d') in 0.005891 seconds
-  Import took 0.008744 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4058.809474 seconds.
-  path: Packages/com.unity.2d.spriteshape/Runtime/Unity.2D.SpriteShape.Runtime.asmdef
-  artifactKey: Guid(caccfbdb442cdc64fa722b4c5585521f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Runtime/Unity.2D.SpriteShape.Runtime.asmdef using Guid(caccfbdb442cdc64fa722b4c5585521f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54a8f2ddcb4cfce6ecd5cc9d998b2800') in 0.011940 seconds
-  Import took 0.046703 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.858575 seconds.
-  path: Packages/com.unity.2d.spriteshape/Runtime/SpriteShapeController.cs
-  artifactKey: Guid(90539df1cd5704abcb25fec9f3f5f84b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Runtime/SpriteShapeController.cs using Guid(90539df1cd5704abcb25fec9f3f5f84b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1158d66c8b5520aa439708025abcb93') in 0.007396 seconds
-  Import took 0.010362 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003002 seconds.
-  path: Packages/com.unity.2d.spriteshape/Runtime/SpriteShapeController.cs
-  artifactKey: Guid(90539df1cd5704abcb25fec9f3f5f84b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Runtime/SpriteShapeController.cs using Guid(90539df1cd5704abcb25fec9f3f5f84b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1158d66c8b5520aa439708025abcb93') in 0.002316 seconds
-  Import took 0.005411 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.987128 seconds.
-  path: Packages/com.unity.2d.spriteshape/Runtime/SpriteShape.cs
-  artifactKey: Guid(af7181f404f1447c0a7a17b3070b952b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Runtime/SpriteShape.cs using Guid(af7181f404f1447c0a7a17b3070b952b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db3a8ea46f89d9402db1fad613b5a299') in 0.006406 seconds
-  Import took 0.009351 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.888875 seconds.
-  path: Packages/com.unity.2d.spriteshape/Runtime/UTess2D
-  artifactKey: Guid(d154a1e3cd29b3a44a3fc7064dd6a83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Runtime/UTess2D using Guid(d154a1e3cd29b3a44a3fc7064dd6a83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fccb4600d98cfd86bf4bc878f597363') in 0.006268 seconds
-  Import took 0.009114 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.770847 seconds.
-  path: Packages/com.unity.2d.spriteshape/Runtime/External
-  artifactKey: Guid(30fdb7163494e28429d56613fe407bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Runtime/External using Guid(30fdb7163494e28429d56613fe407bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbd73ad6770293e3504845971814cbee') in 0.005927 seconds
-  Import took 0.008880 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.946591 seconds.
-  path: Packages/com.unity.2d.spriteshape/Runtime/External/LibTessDotNet
-  artifactKey: Guid(9214d94ab547c5447a11c7a7c6a59482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Runtime/External/LibTessDotNet using Guid(9214d94ab547c5447a11c7a7c6a59482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf3db0d6ad6e580e6d68cb9613827af9') in 0.005962 seconds
-  Import took 0.009044 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 29.413441 seconds.
-  path: Packages/com.unity.2d.spriteshape/Runtime/SpriteShapeGeometryCache.cs
-  artifactKey: Guid(9aa06092e0908a84585e814e7c214a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Runtime/SpriteShapeGeometryCache.cs using Guid(9aa06092e0908a84585e814e7c214a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8080b9df94c52134cdedc316961aa7f7') in 0.006190 seconds
-  Import took 0.009680 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001714 seconds.
-  path: Packages/com.unity.2d.spriteshape/Runtime/SpriteShapeGeometryCache.cs
-  artifactKey: Guid(9aa06092e0908a84585e814e7c214a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Runtime/SpriteShapeGeometryCache.cs using Guid(9aa06092e0908a84585e814e7c214a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8080b9df94c52134cdedc316961aa7f7') in 0.002830 seconds
-  Import took 0.006298 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.146228 seconds.
-  path: Packages/com.unity.2d.spriteshape/Runtime/SpriteShapeGenerator.cs
-  artifactKey: Guid(c9697ca08d26c2848a5c5de0be739d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Runtime/SpriteShapeGenerator.cs using Guid(c9697ca08d26c2848a5c5de0be739d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4bdf612c57d9e1d12970b1f36c9cda4') in 0.006595 seconds
-  Import took 0.009880 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001045 seconds.
-  path: Packages/com.unity.2d.spriteshape/Runtime/SpriteShapeGenerator.cs
-  artifactKey: Guid(c9697ca08d26c2848a5c5de0be739d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Runtime/SpriteShapeGenerator.cs using Guid(c9697ca08d26c2848a5c5de0be739d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4bdf612c57d9e1d12970b1f36c9cda4') in 0.002612 seconds
-  Import took 0.006308 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 170.073017 seconds.
-  path: Packages/com.unity.2d.spriteshape/Runtime
-  artifactKey: Guid(825aa2422a5cc4c60b5eb787fe31a9a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Runtime using Guid(825aa2422a5cc4c60b5eb787fe31a9a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '076aba418bfd849d7b14c98c7e496dc8') in 0.007318 seconds
-  Import took 0.010670 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 195.901398 seconds.
-  path: Assets/Sprite/Sprite Shape Profile.asset
-  artifactKey: Guid(3ddc43ff642748845bd41dc937a661ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprite/Sprite Shape Profile.asset using Guid(3ddc43ff642748845bd41dc937a661ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '277480deb50cea084df41dc4438db610') in 0.034113 seconds
-  Import took 0.038161 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 48.292697 seconds.
-  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
-  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48775a4d0ba47d44f432ee6c79a6a75b') in 0.058156 seconds
-  Import took 0.061578 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Open Sprite Shape.prefab
-  artifactKey: Guid(86ae7de409eb54f619fb1328e4d42480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Open Sprite Shape.prefab using Guid(86ae7de409eb54f619fb1328e4d42480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a5afbbd395c5bddd7f7d4b0b1a3ff0b') in 0.009073 seconds
-  Import took 0.012232 seconds .
+Start importing Assets/Sprite/Basic/SP_Square.png using Guid(c94fa7946ff4a4a4ea389625f0689e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2da1f953343696be6a5a8db1c009537') in 0.019945 seconds
+  Import took 0.024482 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000183 seconds.
-  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
-  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48775a4d0ba47d44f432ee6c79a6a75b') in 0.005143 seconds
-  Import took 0.008125 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000263 seconds.
-  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Open Sprite Shape.prefab
-  artifactKey: Guid(86ae7de409eb54f619fb1328e4d42480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Open Sprite Shape.prefab using Guid(86ae7de409eb54f619fb1328e4d42480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a5afbbd395c5bddd7f7d4b0b1a3ff0b') in 0.005083 seconds
-  Import took 0.008097 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/SpriteShapeEdge.png
-  artifactKey: Guid(0ae2b74b1edd14bb18dd7b65ae916a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/SpriteShapeEdge.png using Guid(0ae2b74b1edd14bb18dd7b65ae916a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75faea26b4b7f94519c7c276baab3273') in 0.059340 seconds
-  Import took 0.062497 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002871 seconds.
-  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/SpriteShapeEdge.png
-  artifactKey: Guid(0ae2b74b1edd14bb18dd7b65ae916a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/SpriteShapeEdge.png using Guid(0ae2b74b1edd14bb18dd7b65ae916a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75faea26b4b7f94519c7c276baab3273') in 0.008736 seconds
-  Import took 0.012142 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 245.386597 seconds.
-  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shape Profiles/Sprite Shape Profile.asset
-  artifactKey: Guid(f24cddf7c09a6442abbce710a6fd7397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shape Profiles/Sprite Shape Profile.asset using Guid(f24cddf7c09a6442abbce710a6fd7397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1c547abf3a407016ac6a17f1f917057') in 0.005763 seconds
-  Import took 0.009699 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.006056 seconds.
-  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shape Profiles/Sprite Shape Profile.asset
-  artifactKey: Guid(f24cddf7c09a6442abbce710a6fd7397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shape Profiles/Sprite Shape Profile.asset using Guid(f24cddf7c09a6442abbce710a6fd7397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1c547abf3a407016ac6a17f1f917057') in 0.003623 seconds
-  Import took 0.007124 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 108.360823 seconds.
-  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Textures/Sprite Shape Corner.png
-  artifactKey: Guid(608e61deb05c54660bebf5a4dd2ee02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Textures/Sprite Shape Corner.png using Guid(608e61deb05c54660bebf5a4dd2ee02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a8b2c5b7c8dd7bfb4d1e490cc37bf6e') in 0.015275 seconds
-  Import took 0.018771 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Textures/Sprite Shape Fill.png
-  artifactKey: Guid(b281b91a70a624a0da1c43adc1c30c7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Textures/Sprite Shape Fill.png using Guid(b281b91a70a624a0da1c43adc1c30c7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08a47d44d612b079b2106330f4c98d98') in 0.016333 seconds
-  Import took 0.019384 seconds .
+  path: Assets/Sprite/Basic/SP_IsometricDiamond.png
+  artifactKey: Guid(d2b99ace0d181e94f8f4153ed53c96ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Basic/SP_IsometricDiamond.png using Guid(d2b99ace0d181e94f8f4153ed53c96ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bb9490048379b69971d54b55ef365fe') in 0.033912 seconds
+  Import took 0.040437 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
