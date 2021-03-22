@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
+    [HideInInspector]
     public bool charTouchGround = false;
 
-    [SerializeField]
-    private float speed = 1f;
+    //I use this speed multiplier to remember at all time the actual basic speed
+    [HideInInspector]
+    public float speedMultiplier = 1f;
 
     [SerializeField]
-    private float jumpForce = 1f;
+    private float speed = 1f, jumpForce = 1f, runSpeedMultiplier = 1f;
+
 
     public float Speed
 	{
@@ -20,5 +23,10 @@ public class Character : MonoBehaviour
     public float JumpForce
 	{
         get { return jumpForce; }
+	}
+
+    public float RunSpeedMultiplier
+	{
+        get { return runSpeedMultiplier; }
 	}
 }

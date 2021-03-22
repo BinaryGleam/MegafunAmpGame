@@ -10,6 +10,11 @@ public class DebugMgr : MonoBehaviour
 
 	[SerializeField]
 	private GameObject[] debugObjects = null;
+
+	public bool DebugIsOn
+	{
+		get { return debugIsOn; }
+	}
 	#endif
 
 	public void ToggleDebug()
