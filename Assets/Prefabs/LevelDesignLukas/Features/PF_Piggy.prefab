@@ -251,7 +251,7 @@ GameObject:
   - component: {fileID: 645759983953314066}
   - component: {fileID: 645759983953314285}
   - component: {fileID: 6535619677656793508}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PF_Piggy
   m_TagString: Player
   m_Icon: {fileID: 0}
