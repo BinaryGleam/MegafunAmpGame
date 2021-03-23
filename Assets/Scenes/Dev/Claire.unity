@@ -193,6 +193,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 623082510, guid: b0c5aae2a80b25a4ab68f7f4a36abc8e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 645759983808940737, guid: b0c5aae2a80b25a4ab68f7f4a36abc8e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 645759983953314064, guid: b0c5aae2a80b25a4ab68f7f4a36abc8e, type: 3}
       propertyPath: m_SortingOrder
       value: 3
@@ -244,6 +252,18 @@ PrefabInstance:
     - target: {fileID: 645759983953314071, guid: b0c5aae2a80b25a4ab68f7f4a36abc8e, type: 3}
       propertyPath: m_Name
       value: PF_Piggy
+      objectReference: {fileID: 0}
+    - target: {fileID: 645759983953314071, guid: b0c5aae2a80b25a4ab68f7f4a36abc8e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 645759984104110353, guid: b0c5aae2a80b25a4ab68f7f4a36abc8e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 645759984409891724, guid: b0c5aae2a80b25a4ab68f7f4a36abc8e, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0c5aae2a80b25a4ab68f7f4a36abc8e, type: 3}
@@ -588,7 +608,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5174281952896789023, guid: 5ad59d40748013d459ceffef4d50652c, type: 3}
   m_PrefabInstance: {fileID: 644922605}
   m_PrefabAsset: {fileID: 0}
---- !u!43 &816426233
+--- !u!43 &683738123
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
