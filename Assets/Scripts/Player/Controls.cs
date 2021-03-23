@@ -123,4 +123,10 @@ public class Controls : MonoBehaviour
             characterRef.TriggerInputRef.onKeyReleaseInTrigger.SafeCall();
         }
     }
+
+    public void StopMovements()
+	{
+        myRigidbody.velocity = new Vector2(0f, myRigidbody.velocity.y);
+        characterRef.speedMultiplier = 1f;
+    }
 }
