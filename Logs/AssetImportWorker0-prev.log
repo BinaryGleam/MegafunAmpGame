@@ -15,11 +15,11 @@ C:/Users/lukni/Documents/Programmation/MegafunAmpGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58920
+54159
 Successfully changed project path to: C:/Users/lukni/Documents/Programmation/MegafunAmpGame
 C:/Users/lukni/Documents/Programmation/MegafunAmpGame
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 62.18 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 48.45 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
@@ -36,78 +36,165 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56460
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56680
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003265 seconds.
+Registered in 0.003709 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 91.34 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 51.41 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.423 seconds
+- Completed reload, in  1.149 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002319 seconds.
+Registered in 0.001814 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 117.20 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 56.64 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.805 seconds
+- Completed reload, in  1.077 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.70 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3105 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 146.0 MB.
-System memory in use after: 146.1 MB.
+System memory in use before: 145.8 MB.
+System memory in use after: 145.9 MB.
 
 Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 3564.
-Total: 3.079100 ms (FindLiveObjects: 0.530700 ms CreateObjectMapping: 0.312400 ms MarkObjects: 2.106000 ms  DeleteObjects: 0.129000 ms)
+Total: 2.980000 ms (FindLiveObjects: 0.256300 ms CreateObjectMapping: 0.112800 ms MarkObjects: 2.486200 ms  DeleteObjects: 0.123900 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/Player/Controls.cs
-  artifactKey: Guid(2ade36c1c462fd34e9547971aa2abd74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player/Controls.cs using Guid(2ade36c1c462fd34e9547971aa2abd74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab89ce57f5624469bf98b7410ae5c18a') in 0.041990 seconds
-  Import took 0.048394 seconds .
+  path: Assets/Prefabs/LevelDesignLukas
+  artifactKey: Guid(49c047760892ef443b6434f0dc7ffe0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelDesignLukas using Guid(49c047760892ef443b6434f0dc7ffe0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0309f0b7baea733d9ea54152a9a05f9c') in 0.012096 seconds
+  Import took 0.017824 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001912 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.985 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2992 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 139.9 MB.
-System memory in use after: 140.0 MB.
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Prefabs/LevelDesignLukas/Features/PF_PushingBox.prefab
+  artifactKey: Guid(3f6e74097b931af4481f35b369e96391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelDesignLukas/Features/PF_PushingBox.prefab using Guid(3f6e74097b931af4481f35b369e96391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebe350a60ed33aa476ee45e38bddc926') in 0.499063 seconds
+  Import took 0.505111 seconds .
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3568.
-Total: 4.967300 ms (FindLiveObjects: 0.815100 ms CreateObjectMapping: 0.376200 ms MarkObjects: 3.612100 ms  DeleteObjects: 0.162900 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Prefabs/LevelDesignLukas/Features/PF_TriggerActivatorTemplate.prefab
+  artifactKey: Guid(e622791508ff9d34588d036f8ded6042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelDesignLukas/Features/PF_TriggerActivatorTemplate.prefab using Guid(e622791508ff9d34588d036f8ded6042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf498ab94259112186b0875f49360168') in 0.022170 seconds
+  Import took 0.026861 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Prefabs/LevelDesignLukas/Features/PF_FeatureBlocker.prefab
+  artifactKey: Guid(73cd5ce8a0dbba6489c2d57021089493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelDesignLukas/Features/PF_FeatureBlocker.prefab using Guid(73cd5ce8a0dbba6489c2d57021089493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6ed8b8d76fa72536e532c8ee946146b') in 0.017821 seconds
+  Import took 0.022639 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Prefabs/LevelDesignLukas/Features/PF_Piggy.prefab
+  artifactKey: Guid(b0c5aae2a80b25a4ab68f7f4a36abc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelDesignLukas/Features/PF_Piggy.prefab using Guid(b0c5aae2a80b25a4ab68f7f4a36abc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '075b972c636a366bfd29bb17b3d68987') in 0.039013 seconds
+  Import took 0.044107 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Prefabs/LevelDesignLukas/Features/PF_TriggerInputTemplate.prefab
+  artifactKey: Guid(5ad59d40748013d459ceffef4d50652c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelDesignLukas/Features/PF_TriggerInputTemplate.prefab using Guid(5ad59d40748013d459ceffef4d50652c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb758977e15281a860f2966367da18c9') in 0.016748 seconds
+  Import took 0.021295 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.352975 seconds.
+  path: Assets/Prefabs/LevelDesignLukas/Features/PlatformStep.prefab
+  artifactKey: Guid(3630c3a3900f36c42aa2257ff7dc90d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelDesignLukas/Features/PlatformStep.prefab using Guid(3630c3a3900f36c42aa2257ff7dc90d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a821c744bd280cc6da254e1bfd3d744c') in 0.018773 seconds
+  Import took 0.023453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023432 seconds.
+  path: Assets/Prefabs/LevelDesignLukas/Features/PlatformStep.prefab
+  artifactKey: Guid(3630c3a3900f36c42aa2257ff7dc90d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelDesignLukas/Features/PlatformStep.prefab using Guid(3630c3a3900f36c42aa2257ff7dc90d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a821c744bd280cc6da254e1bfd3d744c') in 0.009303 seconds
+  Import took 0.014280 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.216814 seconds.
+  path: Assets/Prefabs/LevelDesignLukas/Features/PF_EffectorPlatform.prefab
+  artifactKey: Guid(3630c3a3900f36c42aa2257ff7dc90d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelDesignLukas/Features/PF_EffectorPlatform.prefab using Guid(3630c3a3900f36c42aa2257ff7dc90d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '554012495507436d05cbea4264f89539') in 0.019374 seconds
+  Import took 0.025660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009666 seconds.
+  path: Assets/Prefabs/LevelDesignLukas/Features/PF_EffectorPlatform.prefab
+  artifactKey: Guid(3630c3a3900f36c42aa2257ff7dc90d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelDesignLukas/Features/PF_EffectorPlatform.prefab using Guid(3630c3a3900f36c42aa2257ff7dc90d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '554012495507436d05cbea4264f89539') in 0.011435 seconds
+  Import took 0.017169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 307.007358 seconds.
+  path: Assets/Prefabs/LevelDesignLukas/Features/PF_EffectorPlatform.prefab
+  artifactKey: Guid(3630c3a3900f36c42aa2257ff7dc90d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelDesignLukas/Features/PF_EffectorPlatform.prefab using Guid(3630c3a3900f36c42aa2257ff7dc90d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb77390b5c801282cea36fdbf2e3457f') in 0.017542 seconds
+  Import took 0.025416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005812 seconds.
+  path: Assets/Prefabs/LevelDesignLukas/Features/PF_EffectorPlatform.prefab
+  artifactKey: Guid(3630c3a3900f36c42aa2257ff7dc90d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelDesignLukas/Features/PF_EffectorPlatform.prefab using Guid(3630c3a3900f36c42aa2257ff7dc90d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb77390b5c801282cea36fdbf2e3457f') in 0.011464 seconds
+  Import took 0.019173 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.807106 seconds.
+  path: Assets/Prefabs/LevelDesignLukas/Features/PF_EffectorPlatform.prefab
+  artifactKey: Guid(3630c3a3900f36c42aa2257ff7dc90d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelDesignLukas/Features/PF_EffectorPlatform.prefab using Guid(3630c3a3900f36c42aa2257ff7dc90d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6f7d3f9e284a4922e736a0fc42334c8') in 0.017326 seconds
+  Import took 0.025787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008995 seconds.
+  path: Assets/Prefabs/LevelDesignLukas/Features/PF_EffectorPlatform.prefab
+  artifactKey: Guid(3630c3a3900f36c42aa2257ff7dc90d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelDesignLukas/Features/PF_EffectorPlatform.prefab using Guid(3630c3a3900f36c42aa2257ff7dc90d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6f7d3f9e284a4922e736a0fc42334c8') in 0.014528 seconds
+  Import took 0.021290 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.138092 seconds.
+  path: Assets/Prefabs/LevelDesignLukas/Features/PF_EffectorPlatform.prefab
+  artifactKey: Guid(3630c3a3900f36c42aa2257ff7dc90d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelDesignLukas/Features/PF_EffectorPlatform.prefab using Guid(3630c3a3900f36c42aa2257ff7dc90d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc5702d112831c0a155a6aabbd17debd') in 0.013130 seconds
+  Import took 0.019831 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
