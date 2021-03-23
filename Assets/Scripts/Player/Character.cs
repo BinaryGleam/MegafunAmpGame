@@ -24,6 +24,8 @@ public class Character : MonoBehaviour
     [SerializeField]
     private float speed = 1f, jumpForce = 1f, runSpeedMultiplier = 1f;
 
+	private TriggerInput triggerInputRef = null;
+
     private PlayerState currentState = PlayerState.NORMAL;
 
     public float Speed
@@ -41,6 +43,11 @@ public class Character : MonoBehaviour
         get { return runSpeedMultiplier; }
 	}
 
+	public TriggerInput TriggerInputRef
+	{
+		get { return triggerInputRef; }
+	}
+
 	private void Update()
 	{
 		switch (currentState)
@@ -53,6 +60,35 @@ public class Character : MonoBehaviour
 				break;
 			default:
 				break;
+		}
+	}
+
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		if(collision.GetComponent<TriggerInput>() != null)
+		{
+			#if UNITY_EDITOR || DEVELOPMENT_BUILD
+			if (GameMgr.Instance.GetComponentInChildren<DebugMgr>().DebugIsOn)
+			{
+				Debug.Log("Found Trigger Input");
+			}
+			#endif
+			triggerInputRef = collision.GetComponent<TriggerInput>();
+		}
+	}
+
+	private void OnTriggerExit2D(Collider2D collision)
+	{
+		if (collision.GetComponent<TriggerInput>() != null && triggerInputRef != null)
+		{
+			#if UNITY_EDITOR || DEVELOPMENT_BUILD
+			if (GameMgr.Instance.GetComponentInChildren<DebugMgr>().DebugIsOn)
+			{
+				Debug.Log("Got rid of player input");
+			}
+			#endif
+
+			triggerInputRef = null;
 		}
 	}
 }
