@@ -17,7 +17,6 @@ public class ButcherAI : MonoBehaviour
 
     RaycastHit2D hit;
     private Transform piggy;
-    public Transform piggyTrigger;
 
     //Enumeration of the differents states which the butcher can be in.
     public enum BUTCHER_STATE {
@@ -31,8 +30,6 @@ public class ButcherAI : MonoBehaviour
     void Start(){
     // Finding piggy gameObject inside the game
         piggy = GameObject.FindGameObjectWithTag("Piggy").transform;
-        piggyTrigger = GameObject.FindGameObjectWithTag("PiggyTrigger").transform;
-
     }
 
     void Update() {
@@ -54,7 +51,6 @@ public class ButcherAI : MonoBehaviour
         if(distance <= howClose){
             butcher_state = BUTCHER_STATE.CHASE;
         }
-        if()
 
     }
         
@@ -75,9 +71,5 @@ public class ButcherAI : MonoBehaviour
     // The butcher is starting chasing piggy by moving from his current position toward piggy position  
     private void Chase(){
         transform.position = Vector2.MoveTowards(this.transform.position, piggy.position, speed * 1.5f * Time.deltaTime);
-    }
-    private void Search(){
-
-            transform.position = Vector2.MoveTowards(this.transform.position, piggy.position, speed * 1.5f * Time.deltaTime);
     }
 }
