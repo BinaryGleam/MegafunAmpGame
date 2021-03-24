@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameMgr : MonoBehaviour
 {
@@ -74,6 +75,6 @@ public class GameMgr : MonoBehaviour
 
     private void GameOver()
 	{
-        
+        SceneManager.LoadScene("GameoverScreen", LoadSceneMode.Single);
 	}
 }
