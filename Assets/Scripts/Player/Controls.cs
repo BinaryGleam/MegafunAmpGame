@@ -107,4 +107,26 @@ public class Controls : MonoBehaviour
             myRigidbody.AddForce(transform.up * characterRef.JumpForce, ForceMode2D.Impulse);
 		}
 	}
+
+    public void InteractIn()
+	{
+        if (characterRef.TriggerInputRef != null && characterRef.TriggerInputRef.isActiveAndEnabled)
+		{
+            characterRef.TriggerInputRef.onKeyPressInTrigger.SafeCall();
+		}
+	}
+
+    public void InteractOut()
+    {
+        if (characterRef.TriggerInputRef != null && characterRef.TriggerInputRef.isActiveAndEnabled)
+        {
+            characterRef.TriggerInputRef.onKeyReleaseInTrigger.SafeCall();
+        }
+    }
+
+    public void StopMovements()
+	{
+        myRigidbody.velocity = new Vector2(0f, myRigidbody.velocity.y);
+        characterRef.speedMultiplier = 1f;
+    }
 }
