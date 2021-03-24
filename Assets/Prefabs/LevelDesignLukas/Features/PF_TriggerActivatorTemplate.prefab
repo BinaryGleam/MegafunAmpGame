@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 1770071649949860455}
   - component: {fileID: 6774089749319586435}
   - component: {fileID: 2032568830390573070}
-  - component: {fileID: 176328908}
-  - component: {fileID: 176328909}
   m_Layer: 0
   m_Name: PF_TriggerActivatorTemplate
   m_TagString: Untagged
@@ -139,7 +137,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 176328908}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
         m_MethodName: Play
         m_Mode: 1
@@ -151,7 +149,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 176328909}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SubtitleSender, Assembly-CSharp
         m_MethodName: Activate
         m_Mode: 1
@@ -191,54 +189,3 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   activatorTag: Player
---- !u!320 &176328908
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3764350632509033913}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 6f0cd37ca23997c4c9741d7d233cbb0d, type: 2}
-  m_InitialState: 0
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: -7555866783925290769, guid: 6f0cd37ca23997c4c9741d7d233cbb0d, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -7488784554926701510, guid: 6f0cd37ca23997c4c9741d7d233cbb0d, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 5984639084439245822, guid: 6f0cd37ca23997c4c9741d7d233cbb0d, type: 2}
-    value: {fileID: 0}
-  m_ExposedReferences:
-    m_References:
-    - 5742c330bcb0c294ea31b65fbc19a216: {fileID: 0}
-    - c36fe76b63b0e3240b8bdbe537227732: {fileID: 0}
-    - 4c1aa896a97d63b4197d658add906ca8: {fileID: 0}
-    - 1bfd9cc6f8a8b3a4b80ba559ea060f68: {fileID: 0}
-    - b1ad7f8bb282864429b51f26e94237b3: {fileID: 0}
-    - 66896551d3e6fc741820ed325cbdda11: {fileID: 0}
---- !u!114 &176328909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3764350632509033913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ada6f193357aa024690f647160c4853f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onSubtitleEnd:
-    m_PersistentCalls:
-      m_Calls: []
-  fadeInTime: 1
-  stayTime: 3
-  fadeOutTime: 1
-  msg: Piggy needs to climb!
-  textColor: {r: 1, g: 0.43867922, b: 0.73673767, a: 1}
-  destroysWhenDone: 1
-  isHint: 1

@@ -1,12 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Timeline;
+using UnityEngine.Playables;
 
 enum PlayerState
 {
     NORMAL = 0x0,
     HIDDEN,
     GAMEOVER
+}
+
+[System.Serializable]
+struct DeathAnimations
+{
+	public string killerTag;
+	public PlayableAsset killerAnim;
 }
 
 public class Character : MonoBehaviour
@@ -18,15 +27,21 @@ public class Character : MonoBehaviour
     [HideInInspector]
     public float speedMultiplier = 1f;
 
-    [HideInInspector]
-    public ScriptableItem currentItem = null;
+    //[HideInInspector]
+    //public ScriptableItem currentItem = null;
 
     [SerializeField]
     private float speed = 1f, jumpForce = 1f, runSpeedMultiplier = 1f;
 
-	private TriggerInput triggerInputRef = null;
+	[SerializeField]
+	private DeathAnimations[] piggyDeaths;
 
-    private PlayerState currentState = PlayerState.NORMAL;
+	private TriggerInput triggerInputRef = null;
+	private PlayableDirector piggyDirector = null;
+	private Animator piggyAnimator = null;
+	private Rigidbody2D piggyRb = null;
+
+	//private PlayerState currentState = PlayerState.NORMAL;
 
     public float Speed
 	{
@@ -48,20 +63,49 @@ public class Character : MonoBehaviour
 		get { return triggerInputRef; }
 	}
 
-	private void Update()
+	private void Awake()
 	{
-		switch (currentState)
+		piggyAnimator = GetComponent<Animator>();
+		if (piggyAnimator == null)
 		{
-			case PlayerState.NORMAL:
-				break;
-			case PlayerState.HIDDEN:
-				break;
-			case PlayerState.GAMEOVER:
-				break;
-			default:
-				break;
+			Debug.LogError("Couldn't find the animator for piggy animations");
+		}
+
+		piggyDirector = GetComponent<PlayableDirector>();
+		if(piggyDirector == null)
+		{
+			Debug.LogError("Couldn't find the piggy director to play timelines");
+		}
+
+		piggyRb = GetComponent<Rigidbody2D>();
+		if(piggyRb == null)
+		{
+			Debug.LogError("Couldn't find a rigidbody for the character script of little piggy!");
 		}
 	}
+
+	private void Update()
+	{
+		if(!charTouchGround)
+		{
+			PlayJump();
+		}
+		else
+		{
+			PlayHorizontalLocomotion();
+		}
+		//switch (currentState)
+		//{
+		//	case PlayerState.NORMAL:
+		//		break;
+		//	case PlayerState.HIDDEN:
+		//		break;
+		//	case PlayerState.GAMEOVER:
+		//		break;
+		//	default:
+		//		break;
+		//}
+	}	
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
@@ -89,6 +133,44 @@ public class Character : MonoBehaviour
 			#endif
 
 			triggerInputRef = null;
+		}
+	}
+
+	public void CharReset()
+	{
+		#if UNITY_EDITOR || DEVELOPMENT_BUILD
+		Debug.Log("Character should reset");
+		#endif
+	}
+
+	public void PlayHorizontalLocomotion()
+	{
+		if (piggyRb.velocity == Vector2.zero)
+		{
+			piggyAnimator.Play("Idle");
+		}
+		else if (piggyRb.velocity != Vector2.zero)
+		{
+			if(speedMultiplier == 1f)
+			{
+				piggyAnimator.Play("Move");
+			}
+			else
+			{
+				piggyAnimator.Play("Run");
+			}
+		}
+	}
+
+	public void PlayJump()
+	{
+		if (piggyRb.velocity.y >= 0f)
+		{
+			piggyAnimator.Play("Jump");
+		}
+		else
+		{
+			piggyAnimator.Play("Falling");
 		}
 	}
 }
