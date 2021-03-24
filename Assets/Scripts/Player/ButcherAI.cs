@@ -10,11 +10,14 @@ public class ButcherAI : MonoBehaviour
     public LayerMask groundLayers;
     //setting 'groundCheck' as butcher sprite's child to lauch the Raycast from its position
     public Transform groundCheck;
+    private float distance;
+    private float howClose = 2.5f;
 
     bool isFacingRight = true;
 
     RaycastHit2D hit;
     private Transform piggy;
+    public Transform piggyTrigger;
 
     //Enumeration of the differents states which the butcher can be in.
     public enum BUTCHER_STATE {
@@ -28,6 +31,8 @@ public class ButcherAI : MonoBehaviour
     void Start(){
     // Finding piggy gameObject inside the game
         piggy = GameObject.FindGameObjectWithTag("Piggy").transform;
+        piggyTrigger = GameObject.FindGameObjectWithTag("PiggyTrigger").transform;
+
     }
 
     void Update() {
@@ -45,6 +50,12 @@ public class ButcherAI : MonoBehaviour
             case BUTCHER_STATE.SEARCH:
                 break;
         }
+        distance = Vector3.Distance(piggy.position, transform.position);
+        if(distance <= howClose){
+            butcher_state = BUTCHER_STATE.CHASE;
+        }
+        if()
+
     }
         
     // I used a Raycast directed to the down to detect ground and flip position et continue patrolling
@@ -64,5 +75,9 @@ public class ButcherAI : MonoBehaviour
     // The butcher is starting chasing piggy by moving from his current position toward piggy position  
     private void Chase(){
         transform.position = Vector2.MoveTowards(this.transform.position, piggy.position, speed * 1.5f * Time.deltaTime);
+    }
+    private void Search(){
+
+            transform.position = Vector2.MoveTowards(this.transform.position, piggy.position, speed * 1.5f * Time.deltaTime);
     }
 }
