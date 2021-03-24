@@ -10,6 +10,8 @@ public class GameMgr : MonoBehaviour
     [SerializeField]
     private Text hintBox = null;
 
+    public int nbOfLife = 5;
+
     private static GameMgr instance = null;
     public static GameMgr Instance
 	{
@@ -50,5 +52,28 @@ public class GameMgr : MonoBehaviour
     public void TesAccess()
 	{
         Debug.Log("Accessed the GameMgr");
+	}
+
+    public void Restart()
+	{
+        if(nbOfLife > 0)
+		{
+            nbOfLife -= 1;
+            if( nbOfLife == 0)
+			{
+                GameOver();
+                return;
+			}
+
+            foreach (Reseter rst in FindObjectsOfType<Reseter>())
+            {
+                rst.CustomReset();
+            }
+        }
+	}
+
+    private void GameOver()
+	{
+        
 	}
 }

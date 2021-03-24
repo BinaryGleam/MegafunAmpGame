@@ -1,12 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Timeline;
+using UnityEngine.Playables;
 
 enum PlayerState
 {
     NORMAL = 0x0,
     HIDDEN,
     GAMEOVER
+}
+
+[System.Serializable]
+struct DeathAnimations
+{
+	public string killerTag;
+	public PlayableAsset killerAnim;
 }
 
 public class Character : MonoBehaviour
@@ -18,15 +27,20 @@ public class Character : MonoBehaviour
     [HideInInspector]
     public float speedMultiplier = 1f;
 
-    [HideInInspector]
-    public ScriptableItem currentItem = null;
+    //[HideInInspector]
+    //public ScriptableItem currentItem = null;
 
     [SerializeField]
     private float speed = 1f, jumpForce = 1f, runSpeedMultiplier = 1f;
 
-	private TriggerInput triggerInputRef = null;
+	[SerializeField]
+	private DeathAnimations[] piggyDeaths;
 
-    private PlayerState currentState = PlayerState.NORMAL;
+	private TriggerInput triggerInputRef = null;
+	private PlayableDirector piggyDirector = null;
+	private Animator piggyAnimator = null;
+
+	//private PlayerState currentState = PlayerState.NORMAL;
 
     public float Speed
 	{
@@ -48,20 +62,35 @@ public class Character : MonoBehaviour
 		get { return triggerInputRef; }
 	}
 
-	private void Update()
+	private void Awake()
 	{
-		switch (currentState)
+		piggyAnimator = GetComponent<Animator>();
+		if (piggyAnimator == null)
 		{
-			case PlayerState.NORMAL:
-				break;
-			case PlayerState.HIDDEN:
-				break;
-			case PlayerState.GAMEOVER:
-				break;
-			default:
-				break;
+			Debug.LogError("Couldn't find the animator for piggy animations");
+		}
+
+		piggyDirector = GetComponent<PlayableDirector>();
+		if(piggyDirector == null)
+		{
+			Debug.LogError("Couldn't find the piggy director to play timelines");
 		}
 	}
+
+	private void Update()
+	{
+		//switch (currentState)
+		//{
+		//	case PlayerState.NORMAL:
+		//		break;
+		//	case PlayerState.HIDDEN:
+		//		break;
+		//	case PlayerState.GAMEOVER:
+		//		break;
+		//	default:
+		//		break;
+		//}
+	}	
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
@@ -90,5 +119,12 @@ public class Character : MonoBehaviour
 
 			triggerInputRef = null;
 		}
+	}
+
+	public void CharReset()
+	{
+		#if UNITY_EDITOR || DEVELOPMENT_BUILD
+		Debug.Log("Character should reset");
+		#endif
 	}
 }
