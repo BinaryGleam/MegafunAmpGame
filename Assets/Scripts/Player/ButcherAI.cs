@@ -29,7 +29,7 @@ public class ButcherAI : MonoBehaviour
 
     void Start(){
     // Finding piggy gameObject inside the game
-        piggy = GameObject.FindGameObjectWithTag("Piggy").transform;
+        piggy = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     void Update() {
