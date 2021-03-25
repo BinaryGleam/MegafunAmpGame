@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!43 &274153283
+--- !u!43 &517481190
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -287,7 +287,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &777080127
+--- !u!43 &810705837
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -458,18 +458,66 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6454852848338802, guid: 2bd4693f2d6d5a542a102840c32c004d, type: 3}
+      propertyPath: m_Size.x
+      value: 0.79618764
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454852848338802, guid: 2bd4693f2d6d5a542a102840c32c004d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.030098915
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454852848338802, guid: 2bd4693f2d6d5a542a102840c32c004d, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.039432406
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454852848338802, guid: 2bd4693f2d6d5a542a102840c32c004d, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.52000976
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454852848338803, guid: 2bd4693f2d6d5a542a102840c32c004d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.503
+      objectReference: {fileID: 0}
     - target: {fileID: 6454853211234947, guid: 2bd4693f2d6d5a542a102840c32c004d, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 777080127}
+      objectReference: {fileID: 1193736217}
+    - target: {fileID: 6454853211234947, guid: 2bd4693f2d6d5a542a102840c32c004d, type: 3}
+      propertyPath: m_InstanceId
+      value: -1954
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454853331340606, guid: 2bd4693f2d6d5a542a102840c32c004d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.76000047
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454853331340606, guid: 2bd4693f2d6d5a542a102840c32c004d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.44000018
+      objectReference: {fileID: 0}
     - target: {fileID: 6454853701444921, guid: 2bd4693f2d6d5a542a102840c32c004d, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1516879316}
+      objectReference: {fileID: 810705837}
+    - target: {fileID: 6454853701444921, guid: 2bd4693f2d6d5a542a102840c32c004d, type: 3}
+      propertyPath: m_InstanceId
+      value: -1926
+      objectReference: {fileID: 0}
     - target: {fileID: 6454853751001073, guid: 2bd4693f2d6d5a542a102840c32c004d, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1294577035}
+      objectReference: {fileID: 1547448752}
+    - target: {fileID: 6454853751001073, guid: 2bd4693f2d6d5a542a102840c32c004d, type: 3}
+      propertyPath: m_InstanceId
+      value: -2046
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454853871003059, guid: 2bd4693f2d6d5a542a102840c32c004d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.76000047
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454853871003059, guid: 2bd4693f2d6d5a542a102840c32c004d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.44000018
+      objectReference: {fileID: 0}
     - target: {fileID: 6454854162363676, guid: 2bd4693f2d6d5a542a102840c32c004d, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -541,10 +589,14 @@ PrefabInstance:
     - target: {fileID: 7373347664949837056, guid: 2bd4693f2d6d5a542a102840c32c004d, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 274153283}
+      objectReference: {fileID: 517481190}
+    - target: {fileID: 7373347664949837056, guid: 2bd4693f2d6d5a542a102840c32c004d, type: 3}
+      propertyPath: m_InstanceId
+      value: -1866
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bd4693f2d6d5a542a102840c32c004d, type: 3}
---- !u!43 &1294577035
+--- !u!43 &1193736217
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -708,7 +760,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &1516879316
+--- !u!43 &1547448752
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

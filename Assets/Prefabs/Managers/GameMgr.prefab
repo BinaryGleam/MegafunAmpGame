@@ -348,3 +348,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subBox: {fileID: 675422740}
   hintBox: {fileID: 2506389}
+  nbOfLife: 5
