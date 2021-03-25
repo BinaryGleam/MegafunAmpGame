@@ -45,11 +45,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8477795622753062397, guid: 05147328e853e044a9bf1a81c8ff0521, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.024
       objectReference: {fileID: 0}
     - target: {fileID: 8477795622753062397, guid: 05147328e853e044a9bf1a81c8ff0521, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.083
       objectReference: {fileID: 0}
     - target: {fileID: 8477795622753062397, guid: 05147328e853e044a9bf1a81c8ff0521, type: 3}
       propertyPath: m_LocalPosition.z
@@ -86,10 +86,6 @@ PrefabInstance:
     - target: {fileID: 8477795622753062398, guid: 05147328e853e044a9bf1a81c8ff0521, type: 3}
       propertyPath: m_Name
       value: PF_DeadPig
-      objectReference: {fileID: 0}
-    - target: {fileID: 8477795623508699767, guid: 05147328e853e044a9bf1a81c8ff0521, type: 3}
-      propertyPath: m_Distance
-      value: 2.6032002
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05147328e853e044a9bf1a81c8ff0521, type: 3}
