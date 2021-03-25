@@ -16,8 +16,8 @@ public class ButcherAI : MonoBehaviour
     bool isFacingRight = true;
 
     RaycastHit2D hit;
-    private Transform piggy;
-    private GameObject Piggy;
+    private Transform piggyTrans;
+    private GameObject piggyGO;
     public GameObject patrolPoint;
     public bool hidden;
 
@@ -33,8 +33,8 @@ public class ButcherAI : MonoBehaviour
 
     void Start(){
     // Finding piggy gameObject inside the game
-        piggy = GameObject.FindGameObjectWithTag("Player").transform;
-        Piggy = GameObject.FindGameObjectWithTag("Player");
+        piggyTrans = GameObject.FindGameObjectWithTag("Player").transform;
+        piggyGO = GameObject.FindGameObjectWithTag("Player");
         patrolPoint = GameObject.FindGameObjectWithTag("PatrolPoint");
 
         for(i = 3; i < 8; i++){
@@ -60,10 +60,9 @@ public class ButcherAI : MonoBehaviour
                 break;
             case BUTCHER_STATE.BACKPATROLLING:
                 transform.position = Vector2.MoveTowards(this.transform.position, patrolPoint.transform.position, speed * 2f * Time.deltaTime);
-                
                 break;
         }
-        distance = Vector3.Distance(piggy.position, transform.position);
+        distance = Vector3.Distance(piggyTrans.position, transform.position);
         if(distance <= howClose && !hidden){
             butcher_state = BUTCHER_STATE.CHASE;
         }
@@ -73,7 +72,7 @@ public class ButcherAI : MonoBehaviour
             butcher_state = BUTCHER_STATE.PATROL;
         }
 
-        if (Piggy.activeSelf == false){
+        if (piggyGO.activeSelf == false){
             hidden = true;
         }
         else{
@@ -103,14 +102,14 @@ public class ButcherAI : MonoBehaviour
         }
         else{
             isFacingRight =!isFacingRight;
-            transform.localScale = new Vector3(-transform.localScale.x, 1f, 1f);
+            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
         }
     }
     // The butcher is starting chasing piggy by moving from his current position toward piggy position  
     private void Chase(){
         // the butcher stops chasing when to close and stay next to piggy
-        if (Vector3.Distance(piggy.position, transform.position) >= 1.5) {
-            transform.position = Vector2.MoveTowards(this.transform.position, piggy.position, speed * 4f * Time.deltaTime);
+        if (Vector3.Distance(piggyTrans.position, transform.position) >= 1.5) {
+            transform.position = Vector2.MoveTowards(this.transform.position, piggyTrans.position, speed * 4f * Time.deltaTime);
         }
 
         if (hidden){
@@ -119,7 +118,7 @@ public class ButcherAI : MonoBehaviour
 
         }
 
-        if (Vector3.Distance(piggy.position, transform.position) >= 10f){
+        if (Vector3.Distance(piggyTrans.position, transform.position) >= 10f){
             setBackPatrolMode();
         }
     }
