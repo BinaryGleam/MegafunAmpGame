@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 623082511}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CameraFollow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 645759983808940736}
   - component: {fileID: 645759983808940739}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerControls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -248,9 +248,11 @@ GameObject:
   - component: {fileID: 645759983953314064}
   - component: {fileID: 645759983953314065}
   - component: {fileID: 645759983953314070}
+  - component: {fileID: 6535619677656793508}
+  - component: {fileID: 4807871428118807123}
   - component: {fileID: 645759983953314066}
   - component: {fileID: 645759983953314285}
-  - component: {fileID: 6535619677656793508}
+  - component: {fileID: 6733340124980249716}
   m_Layer: 8
   m_Name: PF_Piggy
   m_TagString: Player
@@ -374,6 +376,42 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!95 &6535619677656793508
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645759983953314071}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c5316dd6625cfea41abcd3b13bbb6a05, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!320 &4807871428118807123
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645759983953314071}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!114 &645759983953314066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,29 +439,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charTouchGround: 0
   speedMultiplier: 1
-  currentItem: {fileID: 0}
   speed: 6
   jumpForce: 5
   runSpeedMultiplier: 2
---- !u!95 &6535619677656793508
-Animator:
-  serializedVersion: 3
+  piggyDeaths:
+  - killerTag: Butcher
+    killerAnim: {fileID: 0}
+  - killerTag: Hazard
+    killerAnim: {fileID: 0}
+--- !u!114 &6733340124980249716
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 645759983953314071}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c5316dd6625cfea41abcd3b13bbb6a05, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45cede3196ad5ef4caa9c70b0c22926a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &645759984104110353
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,7 +469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 645759984104110352}
   - component: {fileID: 645759984104110355}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -507,7 +542,7 @@ GameObject:
   - component: {fileID: 645759984409891727}
   - component: {fileID: 645759984409891726}
   - component: {fileID: 645759984409891721}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundDetector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
