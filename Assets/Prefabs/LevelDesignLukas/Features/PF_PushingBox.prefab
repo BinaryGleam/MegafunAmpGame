@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8908232744005900405}
   - component: {fileID: 8908232744005900406}
   - component: {fileID: 8908232744005900407}
+  - component: {fileID: 130742996375575624}
   m_Layer: 3
   m_Name: PF_PushingBox
   m_TagString: Untagged
@@ -131,3 +132,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 6
+--- !u!114 &130742996375575624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8908232744005900408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 179151c79db65454e92a8ea771dc45da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
