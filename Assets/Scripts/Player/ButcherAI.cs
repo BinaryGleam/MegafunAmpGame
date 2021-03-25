@@ -6,13 +6,15 @@ public class ButcherAI : MonoBehaviour
 {
 
     int i = 0;
-    public float speed = 1f;
+    public float patrolSpeed = 1f;
+    public float chaseSpeed = 8f;
+    public float searchSpeed = 5f;
     public Rigidbody2D rb;
     public LayerMask groundLayers;
     //setting 'groundCheck' as butcher sprite's child to lauch the Raycast from its position
     public Transform groundCheck;
     private float distance;
-    private float howClose = 2.5f;
+    public float howClose = 2.5f;
     bool isFacingRight = true;
 
     RaycastHit2D hit;
@@ -41,6 +43,8 @@ public class ButcherAI : MonoBehaviour
             Physics2D.IgnoreLayerCollision(i,10);
 
         }
+        butcher_state = BUTCHER_STATE.BACKPATROLLING;
+
     }
 
     void Update() {
@@ -59,7 +63,7 @@ public class ButcherAI : MonoBehaviour
                 Search();
                 break;
             case BUTCHER_STATE.BACKPATROLLING:
-                transform.position = Vector2.MoveTowards(this.transform.position, patrolPoint.transform.position, speed * 2f * Time.deltaTime);
+                transform.position = Vector2.MoveTowards(this.transform.position, patrolPoint.transform.position, patrolSpeed * 2f * Time.deltaTime);
                 break;
         }
         distance = Vector3.Distance(piggyTrans.position, transform.position);
@@ -78,7 +82,7 @@ public class ButcherAI : MonoBehaviour
         else{
             hidden = false;
         }
-        Debug.Log("cache:"+hidden);
+
         // if (hidden){
         //     Physics2D.IgnoreLayerCollision(8,10);
         // }
@@ -95,9 +99,9 @@ public class ButcherAI : MonoBehaviour
     private void Patrol() {
         if(hit.collider != false ){
             if(isFacingRight){
-                rb.velocity = new Vector2(speed, rb.velocity.y);
+                rb.velocity = new Vector2(patrolSpeed, rb.velocity.y);
             }else{
-                rb.velocity = new Vector2(-speed, rb.velocity.y);
+                rb.velocity = new Vector2(-patrolSpeed, rb.velocity.y);
             }
         }
         else{
@@ -109,7 +113,7 @@ public class ButcherAI : MonoBehaviour
     private void Chase(){
         // the butcher stops chasing when to close and stay next to piggy
         if (Vector3.Distance(piggyTrans.position, transform.position) >= 1.5) {
-            transform.position = Vector2.MoveTowards(this.transform.position, piggyTrans.position, speed * 4f * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(this.transform.position, piggyTrans.position, chaseSpeed * Time.deltaTime);
         }
 
         if (hidden){
@@ -123,8 +127,10 @@ public class ButcherAI : MonoBehaviour
         }
     }
     private void Search(){
-
-         transform.position = Vector2.MoveTowards(this.transform.position, TriggerPoint.position, speed * 1.5f * Time.deltaTime);
+        if(butcher_state != BUTCHER_STATE.BACKPATROLLING)
+         {
+             transform.position = Vector2.MoveTowards(this.transform.position, TriggerPoint.position, searchSpeed * Time.deltaTime);
+         }
    
     }
     void setBackPatrolMode(){

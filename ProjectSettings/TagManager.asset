@@ -13,6 +13,7 @@ TagManager:
   - Point2
   - PatrolPoint
   - Butcher
+  - PatrolLayer
   layers:
   - Default
   - TransparentFX
