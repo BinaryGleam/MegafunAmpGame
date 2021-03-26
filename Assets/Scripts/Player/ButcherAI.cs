@@ -20,6 +20,8 @@ public class ButcherAI : MonoBehaviour
     private GameObject piggyGO;
     public bool hidden;
 
+    private Animator buAnimator = null;
+
     //Enumeration of the differents states which the butcher can be in.
     public enum BUTCHER_STATE {
         PATROL,
@@ -29,7 +31,15 @@ public class ButcherAI : MonoBehaviour
     }
     public static BUTCHER_STATE butcher_state;
 
-    void Start(){
+	private void Awake()
+	{
+        buAnimator = GetComponent<Animator>();
+        if (buAnimator == null)
+            Debug.LogError("No animator on butcher");
+	}
+
+	void Start()
+    {
     // Finding piggy gameObject inside the game
         piggyTrans = GameObject.FindGameObjectWithTag("Player").transform;
         piggyGO = GameObject.FindGameObjectWithTag("Player");
@@ -47,15 +57,19 @@ public class ButcherAI : MonoBehaviour
         {
             case BUTCHER_STATE.PATROL:
                 Patrol();
+                buAnimator.Play("Walk");
                 break;
             case BUTCHER_STATE.IDLE:
                 Idle();
+                buAnimator.Play("Idle");
                 break;
             case BUTCHER_STATE.CHASE:
                 Chase();            
+                buAnimator.Play("Run");
                 break;
             case BUTCHER_STATE.SEARCH:    
                 Search();            
+                buAnimator.Play("Run");
                 break;
         }
         distance = Vector3.Distance(piggyTrans.position, transform.position);
