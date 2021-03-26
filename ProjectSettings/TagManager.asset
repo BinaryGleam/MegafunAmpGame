@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Piggy
+  - PiggyTrigger
+  - ButcherLayer
+  - TriggerPoint
+  - PatrollingPoints
+  - Point1
+  - Point2
+  - PatrolPoint
+  - Butcher
+  - PatrolLayer
   layers:
   - Default
   - TransparentFX
@@ -14,8 +24,8 @@ TagManager:
   - FeatureBlocker
   - PlayerOnly
   - Player
-  - 
-  - 
+  - ButcherLayer
+  - Butcher
   - 
   - 
   - 

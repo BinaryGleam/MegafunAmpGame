@@ -140,7 +140,13 @@ public class Controls : MonoBehaviour
         myRigidbody.velocity = new Vector2(0f, myRigidbody.velocity.y);
         characterRef.speedMultiplier = 1f;
     }
+
     void createDust(){
         dust.Play();
     }
+
+    public void TogglePause()
+	{
+
+	}
 }
