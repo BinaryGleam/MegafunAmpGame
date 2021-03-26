@@ -10,6 +10,8 @@ public class GameMgr : MonoBehaviour
     private Text subBox = null;
     [SerializeField]
     private Text hintBox = null;
+    [SerializeField]
+    private Text lifeCount = null;
 
     public int nbOfLife = 5;
 
@@ -44,8 +46,11 @@ public class GameMgr : MonoBehaviour
 
         if (subBox == null)
             Debug.LogError("subBox not referenced inside the editor for " + ToString());
-        if (subBox == null)
+        if (hintBox == null)
             Debug.LogError("hintBox not referenced inside the editor for " + ToString());
+        if(lifeCount == null)
+            Debug.LogError("lifecount not referenced inside the editor for " + ToString());
+        lifeCount.text = "X " + nbOfLife;
         instance = this;
         DontDestroyOnLoad(gameObject);
     }
@@ -60,8 +65,9 @@ public class GameMgr : MonoBehaviour
         if(nbOfLife > 0)
 		{
             nbOfLife -= 1;
+            lifeCount.text = "X " + nbOfLife;
             if( nbOfLife == 0)
-			{
+            {
                 GameOver();
                 return;
 			}

@@ -9,7 +9,7 @@ public class Reseter : MonoBehaviour
     protected Vector3 startScale;
 
     // Start is called before the first frame update
-    protected void Awake()
+    virtual protected void Awake()
     {
         startPosition = transform.localPosition;
         startRotation = transform.localRotation;
