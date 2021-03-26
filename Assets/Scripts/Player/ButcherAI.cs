@@ -9,6 +9,9 @@ public class ButcherAI : MonoBehaviour
     public float patrolSpeed = 1f;
     public float chaseSpeed = 8f;
     public float searchSpeed = 5f;
+    public AudioSource breath = null;
+    public AudioSource scream = null;
+    public AudioSource step = null;
     public Rigidbody2D rb;
     public LayerMask groundLayers;
     public Transform groundCheck; //setting 'groundCheck' as butcher sprite's child to lauch the Raycast from its position
@@ -18,6 +21,7 @@ public class ButcherAI : MonoBehaviour
     RaycastHit2D hit;
     private Transform piggyTrans;
     private GameObject piggyGO;
+    private bool didScreamOnce = false;
     public bool hidden;
 
     private Animator buAnimator = null;
@@ -36,7 +40,11 @@ public class ButcherAI : MonoBehaviour
         buAnimator = GetComponent<Animator>();
         if (buAnimator == null)
             Debug.LogError("No animator on butcher");
-	}
+        if (breath == null)
+            Debug.LogError("Reference breath audiosource to butcher script");
+        if (step == null)
+            Debug.LogError("Reference breath audiosource to butcher script");
+    }
 
 	void Start()
     {
@@ -57,10 +65,12 @@ public class ButcherAI : MonoBehaviour
         {
             case BUTCHER_STATE.PATROL:
                 Patrol();
+                didScreamOnce = false;
                 buAnimator.Play("Walk");
                 break;
             case BUTCHER_STATE.IDLE:
                 Idle();
+                didScreamOnce = false;
                 buAnimator.Play("Idle");
                 break;
             case BUTCHER_STATE.CHASE:
@@ -69,11 +79,17 @@ public class ButcherAI : MonoBehaviour
                 break;
             case BUTCHER_STATE.SEARCH:    
                 Search();            
+                didScreamOnce = false;
                 buAnimator.Play("Run");
                 break;
         }
         distance = Vector3.Distance(piggyTrans.position, transform.position);
         if(distance <= howClose && !hidden){
+            if(didScreamOnce == false)
+			{
+                PlayScream();
+                didScreamOnce = true;
+			}
             butcher_state = BUTCHER_STATE.CHASE;
         }
         Debug.Log(butcher_state);
@@ -144,4 +160,20 @@ public class ButcherAI : MonoBehaviour
     void setPatrolMode(){
         butcher_state = BUTCHER_STATE.PATROL;
     }
+
+    public void PlayBreath()
+	{
+        breath.Play();
+	}
+
+    public void PlayScream()
+    {
+        breath.Stop();
+        scream.Play();
+    }
+
+    public void PlayStep()
+	{
+        step.Play();
+	}
 }
