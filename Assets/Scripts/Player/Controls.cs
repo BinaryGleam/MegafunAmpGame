@@ -114,8 +114,9 @@ public class Controls : MonoBehaviour
         if(characterRef.charTouchGround)
 		{
             myRigidbody.AddForce(transform.up * characterRef.JumpForce, ForceMode2D.Impulse);
+            createDust();
+            characterRef.jumpSource.Play();
 		}
-        createDust();
 	}
 
     public void InteractIn()
@@ -139,7 +140,13 @@ public class Controls : MonoBehaviour
         myRigidbody.velocity = new Vector2(0f, myRigidbody.velocity.y);
         characterRef.speedMultiplier = 1f;
     }
+
     void createDust(){
         dust.Play();
     }
+
+    public void TogglePause()
+	{
+
+	}
 }
