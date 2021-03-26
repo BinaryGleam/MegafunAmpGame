@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: 2490944353167673471}
   - component: {fileID: 2490944353167673440}
   - component: {fileID: 2490944353167673470}
+  - component: {fileID: 4933588876137197012}
   m_Layer: 10
   m_Name: Butcher
   m_TagString: Butcher
@@ -317,6 +318,7 @@ MonoBehaviour:
   groundCheck: {fileID: 2490944353556850926}
   howClose: 4
   hidden: 0
+  butcher_stateTest: 0
 --- !u!95 &2490944353167673470
 Animator:
   serializedVersion: 3
@@ -336,6 +338,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4933588876137197012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2490944353167673465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b55e1e4b348a2499babc97bca4de94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2490944353556850921
 GameObject:
   m_ObjectHideFlags: 0

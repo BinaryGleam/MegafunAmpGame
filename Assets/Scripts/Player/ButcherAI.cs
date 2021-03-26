@@ -217,4 +217,15 @@ public class ButcherAI : MonoBehaviour
     {
 
     }
+
+    public void Stop()
+	{
+        butcher_state = BUTCHER_STATE.NOTHING;
+        rb.velocity = Vector2.zero;
+	}
+
+    public void Restart()
+    {
+        butcher_state = BUTCHER_STATE.PATROL;
+    }
 }
