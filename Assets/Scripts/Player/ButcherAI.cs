@@ -108,11 +108,23 @@ public class ButcherAI : MonoBehaviour
         else{
             hidden = false;
         }
+        if (butcher_state == BUTCHER_STATE.PATROL)
+        {
+            if (rb.velocity.x < -0.5f)
+            {
+                transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+            }
+            if (rb.velocity.x > 0.5f)
+            {
+                transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+            }
+        }
     }
     
         
     // I used a Raycast directed to the down to detect ground and flip position et continue patrolling
     private void Patrol() {
+        
         if(hit.collider != false ){
             if(isFacingRight){
                 rb.velocity = new Vector2(patrolSpeed, rb.velocity.y);
