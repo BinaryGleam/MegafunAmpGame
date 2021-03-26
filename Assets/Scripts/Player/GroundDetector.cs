@@ -6,6 +6,8 @@ public class GroundDetector : MonoBehaviour
 {
     [SerializeField]
     private Character characterRef = null;
+	//[SerializeField]
+	//private float landThreshold = 0.5f;
 
 	private void Awake()
 	{
@@ -19,6 +21,8 @@ public class GroundDetector : MonoBehaviour
 		if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
 		{
 			characterRef.charTouchGround = true;
+			//if(Mathf.Abs(GetComponentInParent<Rigidbody2D>().velocity.y) > landThreshold)
+			//	characterRef.landSource.Play();
 		}
 	}
 

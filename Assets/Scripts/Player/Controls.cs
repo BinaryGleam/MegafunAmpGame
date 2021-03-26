@@ -114,8 +114,9 @@ public class Controls : MonoBehaviour
         if(characterRef.charTouchGround)
 		{
             myRigidbody.AddForce(transform.up * characterRef.JumpForce, ForceMode2D.Impulse);
+            createDust();
+            characterRef.jumpSource.Play();
 		}
-        createDust();
 	}
 
     public void InteractIn()
