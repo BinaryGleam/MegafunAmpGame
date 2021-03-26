@@ -24,6 +24,7 @@ public class PlayerReseter : Reseter
 	{
 		base.CustomReset();
 		piggy.CharReset();
+		GetComponent<Controls>().StopMovements();
 	}
 
 }

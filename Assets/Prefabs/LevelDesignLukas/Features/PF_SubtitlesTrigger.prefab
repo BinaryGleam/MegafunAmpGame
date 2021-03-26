@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 6735445362601286410}
   - component: {fileID: 2255845976174481799}
   - component: {fileID: 250932071016126788}
+  - component: {fileID: 6954439412888442109}
   m_Layer: 0
-  m_Name: SubtitlesTrigger
+  m_Name: PF_SubtitlesTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164,3 +165,15 @@ MonoBehaviour:
   textColor: {r: 1, g: 0.43867922, b: 0.73673767, a: 1}
   destroysWhenDone: 1
   isHint: 0
+--- !u!114 &6954439412888442109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3983105765603673136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85e17bd34767bda4390a4fe7336e109a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

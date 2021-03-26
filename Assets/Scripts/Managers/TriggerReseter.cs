@@ -2,17 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TriggerReseter : MonoBehaviour
+public class TriggerReseter : Reseter
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	private TriggerEvent trigger = null;
+	private bool enabledOnGameStart;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	protected override void Awake()
+	{
+		trigger = GetComponent<TriggerEvent>();
+		if (trigger == null)
+			Debug.LogError("There was an issue for the reseter and no trigger event were found");
+
+		enabledOnGameStart = trigger.gameObject.activeInHierarchy;
+	}
+
+	public override void CustomReset()
+	{
+		trigger.gameObject.SetActive(enabledOnGameStart);
+	}
 }
