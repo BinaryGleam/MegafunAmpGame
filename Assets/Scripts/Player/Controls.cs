@@ -10,6 +10,7 @@ public class Controls : MonoBehaviour
     private Rigidbody2D myRigidbody = null;
     private SpriteRenderer mySpriteRenderer = null;
     private Character characterRef = null;
+    public ParticleSystem dust;
 
     
     // Start is called before the first frame update
@@ -34,6 +35,8 @@ public class Controls : MonoBehaviour
     //All these functions are set through the editor to the Player InputWrapper
     public void FlipSpriteLeft()
 	{
+        createDust();
+
         //Make the character sprite shift to the left
         mySpriteRenderer.flipX = true;
         float lookAtX = -Mathf.Abs(lookAtTransform.localPosition.x);
@@ -52,6 +55,8 @@ public class Controls : MonoBehaviour
 
     public void FlipSpriteRight()
 	{
+        createDust();
+
         //Make the character sprite shift to its basic position
         mySpriteRenderer.flipX = false;
         float lookAtX = Mathf.Abs(lookAtTransform.localPosition.x);
@@ -86,6 +91,8 @@ public class Controls : MonoBehaviour
         #endif
 
         characterRef.speedMultiplier = characterRef.RunSpeedMultiplier;
+        createDust();
+
 	}
 
     public void StopRun()
@@ -98,6 +105,8 @@ public class Controls : MonoBehaviour
         #endif
 
         characterRef.speedMultiplier = 1f;
+        createDust();
+        
     }
 
     public void Jump()
@@ -106,6 +115,7 @@ public class Controls : MonoBehaviour
 		{
             myRigidbody.AddForce(transform.up * characterRef.JumpForce, ForceMode2D.Impulse);
 		}
+        createDust();
 	}
 
     public void InteractIn()
@@ -128,5 +138,8 @@ public class Controls : MonoBehaviour
 	{
         myRigidbody.velocity = new Vector2(0f, myRigidbody.velocity.y);
         characterRef.speedMultiplier = 1f;
+    }
+    void createDust(){
+        dust.Play();
     }
 }
