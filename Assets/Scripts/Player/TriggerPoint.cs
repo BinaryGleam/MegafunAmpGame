@@ -25,6 +25,7 @@ public class TriggerPoint : MonoBehaviour
         }
         if (col.gameObject.tag == "Butcher"){
             if (ButcherAI.butcher_state != ButcherAI.BUTCHER_STATE.CHASE){
+                    ButcherAI.butcher_state = ButcherAI.BUTCHER_STATE.IDLE;
                     Invoke("Patrolling", 4);
                 }
 

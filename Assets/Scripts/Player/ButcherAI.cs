@@ -49,6 +49,7 @@ public class ButcherAI : MonoBehaviour
                 Patrol();
                 break;
             case BUTCHER_STATE.IDLE:
+                Idle();
                 break;
             case BUTCHER_STATE.CHASE:
                 Chase();            
@@ -93,14 +94,16 @@ public class ButcherAI : MonoBehaviour
         if (Vector3.Distance(piggyTrans.position, transform.position) >= 1.5 && hit.collider != false) {
             transform.position = Vector2.MoveTowards(this.transform.position, piggyTrans.position, chaseSpeed * Time.deltaTime);
         }
-    // If the butcher is in chasing mode and suddenly he can't see piggy because she is hidden , the butcher continue chasing in that direction before getting back to patrol mode
+    // If the butcher is in chasing mode and suddenly he can't see piggy because she is hidden , the butcher continue chasing in that direction before getting back to the idle mode before going to patrol mode
         if (hidden){
+            butcher_state = BUTCHER_STATE.IDLE;
             Invoke("setPatrolMode", 2);
           
 
         }
-    // If Piggy is so far of butcher , we can say that she escape so the butcher get back to patrol mode
+    // If Piggy is so far of butcher , we can say that she escape so the butcher get back the idle mode for few second and switch to the patrol mode
         if (Vector3.Distance(piggyTrans.position, transform.position) >= 10f){
+            butcher_state = BUTCHER_STATE.IDLE;
             Invoke("setPatrolMode", 2);
 
         }
@@ -117,6 +120,10 @@ public class ButcherAI : MonoBehaviour
 
         }
 
+    }
+    // When the butcher is in the idle mode he stop going further and the corresponding animation is setted 
+    private void Idle(){
+        rb.velocity = new Vector2(0f, 0f);
     }
     void setPatrolMode(){
         butcher_state = BUTCHER_STATE.PATROL;
