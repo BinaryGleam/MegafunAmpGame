@@ -919,7 +919,7 @@ GameObject:
   - component: {fileID: 5956588522528293234}
   - component: {fileID: 6873342953099406924}
   - component: {fileID: 2498467443784075032}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SP_Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1003,7 +1003,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0.13}
   m_ConnectedAnchor: {x: 0, y: -0.065}
   m_AutoConfigureDistance: 1
-  m_Distance: 1.7246857
+  m_Distance: 1.7205507
   m_MaxDistanceOnly: 1
 --- !u!212 &6873342953099406924
 SpriteRenderer:
@@ -1262,7 +1262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3905976977950214358}
   - component: {fileID: 8810180020368132297}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LI_Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
