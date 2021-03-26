@@ -785,7 +785,7 @@ GameObject:
   - component: {fileID: 5956588521767095871}
   - component: {fileID: 5956588521767095869}
   - component: {fileID: 5956588521767095868}
-  - component: {fileID: 5956588521767095866}
+  - component: {fileID: 5140207955846556300}
   m_Layer: 0
   m_Name: SP_Attach
   m_TagString: Untagged
@@ -879,7 +879,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &5956588521767095866
+--- !u!61 &5140207955846556300
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -903,7 +903,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.32, y: 0.13}
   m_EdgeRadius: 0
 --- !u!1 &5956588522528293001
 GameObject:
@@ -934,7 +934,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5956588522528293001}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.154, z: 0}
+  m_LocalPosition: {x: 1.39, y: -1.469, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 3905976977950214358}
@@ -1003,7 +1003,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0.13}
   m_ConnectedAnchor: {x: 0, y: -0.065}
   m_AutoConfigureDistance: 1
-  m_Distance: 1.6990001
+  m_Distance: 1.7246857
   m_MaxDistanceOnly: 1
 --- !u!212 &6873342953099406924
 SpriteRenderer:
