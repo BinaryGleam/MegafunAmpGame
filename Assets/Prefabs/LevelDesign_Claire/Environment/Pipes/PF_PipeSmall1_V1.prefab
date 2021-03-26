@@ -41,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 191136787200836643}
   - component: {fileID: 6389280802538604772}
+  - component: {fileID: 2629851488456290278}
   m_Layer: 3
   m_Name: BG_Level_PipeSmall1_V1
   m_TagString: Untagged
@@ -113,3 +114,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &2629851488456290278
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8643522231469499701}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.3, y: 1.43}
+    newSize: {x: 0.3, y: 1.43}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.090433955, y: 0.715}
+      - {x: -0.09268798, y: 0.008473282}
+      - {x: -0.0940094, y: -0.41173363}
+      - {x: -0.09226993, y: -0.46820065}
+      - {x: -0.0900139, y: -0.6032452}
+      - {x: 0.095306784, y: -0.60588497}
+      - {x: 0.09526827, y: -0.46571156}
+      - {x: 0.095062256, y: -0.41075134}
+      - {x: 0.09317626, y: 0.715}
