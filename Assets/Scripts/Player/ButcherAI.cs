@@ -13,7 +13,7 @@ public class ButcherAI : MonoBehaviour
     public LayerMask groundLayers;
     public Transform groundCheck; //setting 'groundCheck' as butcher sprite's child to lauch the Raycast from its position
     private float distance;
-    public float howClose = 2.5f;
+    public float howClose = 4f;
     bool isFacingRight = true;
     RaycastHit2D hit;
     private Transform piggyTrans;
@@ -83,6 +83,8 @@ public class ButcherAI : MonoBehaviour
             }
         }
         else{
+            butcher_state = BUTCHER_STATE.IDLE;
+            Invoke("setPatrolMode", 2);
             isFacingRight =!isFacingRight;
             transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
         }
