@@ -18,7 +18,8 @@ public class ButcherAI : MonoBehaviour
     RaycastHit2D hit;
     private Transform piggyTrans;
     private GameObject piggyGO;
-    public bool hidden;
+    public bool hidden= false;
+   
 
     private Animator buAnimator = null;
 
@@ -28,8 +29,12 @@ public class ButcherAI : MonoBehaviour
         IDLE,
         CHASE,
         SEARCH,
+        NOTHING
     }
     public static BUTCHER_STATE butcher_state;
+    public BUTCHER_STATE butcher_stateTest;
+
+    private float look = 1f;
 
 	private void Awake()
 	{
@@ -52,6 +57,7 @@ public class ButcherAI : MonoBehaviour
     }
 
     void Update() {
+//     butcher_state = butcher_stateTest;
         hit = Physics2D.Raycast(groundCheck.position, -transform.up, 100f, groundLayers);
         switch (butcher_state)
         {
@@ -64,12 +70,16 @@ public class ButcherAI : MonoBehaviour
                 buAnimator.Play("Idle");
                 break;
             case BUTCHER_STATE.CHASE:
-                Chase();            
+                Chase();
                 buAnimator.Play("Run");
                 break;
             case BUTCHER_STATE.SEARCH:    
                 Search();            
                 buAnimator.Play("Run");
+                break;
+            case BUTCHER_STATE.NOTHING:    
+                nothing();            
+                buAnimator.Play("Idle");
                 break;
         }
         distance = Vector3.Distance(piggyTrans.position, transform.position);
@@ -84,6 +94,9 @@ public class ButcherAI : MonoBehaviour
         else{
             hidden = false;
         }
+        //transform.localScale = new Vector3(Mathf.Sign(rb.velocity.x)*transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        //Debug.Log(rb.velocity.x);
+
     }
     
         
@@ -98,13 +111,16 @@ public class ButcherAI : MonoBehaviour
         }
         else{
             butcher_state = BUTCHER_STATE.IDLE;
-            Invoke("setPatrolMode", 2);
             isFacingRight =!isFacingRight;
             transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+            Invoke("setPatrolMode", 2);
+
         }
     }
     // The butcher is starting chasing piggy by moving from his current position toward piggy position  
     private void Chase(){
+
+        lookPiggy();
         // the butcher stops chasing when to close and stay next to piggy
 
         if (Vector3.Distance(piggyTrans.position, transform.position) >= 1.5 && hit.collider != false) {
@@ -125,7 +141,7 @@ public class ButcherAI : MonoBehaviour
         }
     }
     private void Search(){
-
+            lookPiggy();
     // the butcher get toward the area where the signal is triggered inside his own area    
         if(hit.collider != false ){
             transform.position = Vector2.MoveTowards(this.transform.position, TriggerPoint.position, searchSpeed * Time.deltaTime);            
@@ -141,7 +157,23 @@ public class ButcherAI : MonoBehaviour
     private void Idle(){
         rb.velocity = new Vector2(0f, 0f);
     }
+    private void Stop(){
+        rb.velocity = new Vector2(0f, 0f);
+    }
     void setPatrolMode(){
         butcher_state = BUTCHER_STATE.PATROL;
+    }
+    
+    void lookPiggy(){
+        if(butcher_state != BUTCHER_STATE.PATROL)
+        {if (transform.position.x - piggyTrans.position.x > 0){
+            transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);        
+       }
+        else{
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);       
+       }}
+    }
+    void nothing(){
+
     }
 }
