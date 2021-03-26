@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 297226890700460608}
   - component: {fileID: 60378032172140862}
+  - component: {fileID: 4841497539408472568}
   m_Layer: 3
   m_Name: BG_Level_PipeLarge1_V1
   m_TagString: Untagged
@@ -68,8 +69,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1931189049
-  m_SortingLayer: 2
+  m_SortingLayerID: -894644145
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 05a9b62abd4eb584fba29b193d15ce58, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -82,6 +83,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &4841497539408472568
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3665619011293131302}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.96, y: 1.02}
+    newSize: {x: 2.96, y: 1.02}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.96, y: 0.78}
+  m_EdgeRadius: 0
 --- !u!1 &6675487956403092496
 GameObject:
   m_ObjectHideFlags: 0
