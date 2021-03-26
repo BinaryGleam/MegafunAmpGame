@@ -11,16 +11,13 @@ public class ButcherAI : MonoBehaviour
     public float searchSpeed = 5f;
     public Rigidbody2D rb;
     public LayerMask groundLayers;
-    //setting 'groundCheck' as butcher sprite's child to lauch the Raycast from its position
-    public Transform groundCheck;
+    public Transform groundCheck; //setting 'groundCheck' as butcher sprite's child to lauch the Raycast from its position
     private float distance;
     public float howClose = 2.5f;
     bool isFacingRight = true;
-
     RaycastHit2D hit;
     private Transform piggyTrans;
     private GameObject piggyGO;
-    public GameObject patrolPoint;
     public bool hidden;
 
     //Enumeration of the differents states which the butcher can be in.
@@ -29,7 +26,6 @@ public class ButcherAI : MonoBehaviour
         IDLE,
         CHASE,
         SEARCH,
-        BACKPATROLLING
     }
     public static BUTCHER_STATE butcher_state;
 
@@ -37,13 +33,11 @@ public class ButcherAI : MonoBehaviour
     // Finding piggy gameObject inside the game
         piggyTrans = GameObject.FindGameObjectWithTag("Player").transform;
         piggyGO = GameObject.FindGameObjectWithTag("Player");
-        patrolPoint = GameObject.FindGameObjectWithTag("PatrolPoint");
-
         for(i = 3; i < 8; i++){
             Physics2D.IgnoreLayerCollision(i,10);
 
         }
-        butcher_state = BUTCHER_STATE.BACKPATROLLING;
+        butcher_state = BUTCHER_STATE.PATROL;
 
     }
 
@@ -57,13 +51,10 @@ public class ButcherAI : MonoBehaviour
             case BUTCHER_STATE.IDLE:
                 break;
             case BUTCHER_STATE.CHASE:
-                Chase();
+                Chase();            
                 break;
-            case BUTCHER_STATE.SEARCH:
-                Search();
-                break;
-            case BUTCHER_STATE.BACKPATROLLING:
-                transform.position = Vector2.MoveTowards(this.transform.position, patrolPoint.transform.position, patrolSpeed * 2f * Time.deltaTime);
+            case BUTCHER_STATE.SEARCH:    
+                Search();            
                 break;
         }
         distance = Vector3.Distance(piggyTrans.position, transform.position);
@@ -72,26 +63,12 @@ public class ButcherAI : MonoBehaviour
         }
         Debug.Log(butcher_state);
 
-        if(butcher_state == BUTCHER_STATE.BACKPATROLLING && hit.collider == true){
-            butcher_state = BUTCHER_STATE.PATROL;
-        }
-
         if (piggyGO.activeSelf == false){
             hidden = true;
         }
         else{
             hidden = false;
         }
-
-        // if (hidden){
-        //     Physics2D.IgnoreLayerCollision(8,10);
-        // }
-        // else{
-        //     Physics2D.IgnoreLayerCollision(8,10,false);
-        // }
-
-
-        
     }
     
         
@@ -112,28 +89,36 @@ public class ButcherAI : MonoBehaviour
     // The butcher is starting chasing piggy by moving from his current position toward piggy position  
     private void Chase(){
         // the butcher stops chasing when to close and stay next to piggy
-        if (Vector3.Distance(piggyTrans.position, transform.position) >= 1.5) {
+
+        if (Vector3.Distance(piggyTrans.position, transform.position) >= 1.5 && hit.collider != false) {
             transform.position = Vector2.MoveTowards(this.transform.position, piggyTrans.position, chaseSpeed * Time.deltaTime);
         }
-
+    // If the butcher is in chasing mode and suddenly he can't see piggy because she is hidden , the butcher continue chasing in that direction before getting back to patrol mode
         if (hidden){
-            Invoke("setBackPatrolMode", 2);
+            Invoke("setPatrolMode", 2);
           
 
         }
-
+    // If Piggy is so far of butcher , we can say that she escape so the butcher get back to patrol mode
         if (Vector3.Distance(piggyTrans.position, transform.position) >= 10f){
-            setBackPatrolMode();
+            Invoke("setPatrolMode", 2);
+
         }
     }
     private void Search(){
-        if(butcher_state != BUTCHER_STATE.BACKPATROLLING)
-         {
-             transform.position = Vector2.MoveTowards(this.transform.position, TriggerPoint.position, searchSpeed * Time.deltaTime);
-         }
-   
+
+    // the butcher get toward the area where the signal is triggered inside his own area    
+        if(hit.collider != false ){
+            transform.position = Vector2.MoveTowards(this.transform.position, TriggerPoint.position, searchSpeed * Time.deltaTime);            
+        }
+    // When the butcher is on the triggered area and he notices no changes he get back to patrol mode
+        if (Vector3.Distance(TriggerPoint.position, transform.position) < 1.5) {
+            Invoke("setPatrolMode", 2);
+
+        }
+
     }
-    void setBackPatrolMode(){
-        butcher_state = BUTCHER_STATE.BACKPATROLLING;
+    void setPatrolMode(){
+        butcher_state = BUTCHER_STATE.PATROL;
     }
 }

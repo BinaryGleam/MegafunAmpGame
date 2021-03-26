@@ -25,7 +25,7 @@ public class TriggerPoint : MonoBehaviour
         }
         if (col.gameObject.tag == "Butcher"){
             if (ButcherAI.butcher_state != ButcherAI.BUTCHER_STATE.CHASE){
-                    Invoke("BackPatrolling", 4);
+                    Invoke("Patrolling", 4);
                 }
 
         }
@@ -33,8 +33,8 @@ public class TriggerPoint : MonoBehaviour
     }
 
 
-    private void BackPatrolling(){
-        ButcherAI.butcher_state = ButcherAI.BUTCHER_STATE.BACKPATROLLING;
+    private void Patrolling(){
+        ButcherAI.butcher_state = ButcherAI.BUTCHER_STATE.PATROL;
 
     }
 }
