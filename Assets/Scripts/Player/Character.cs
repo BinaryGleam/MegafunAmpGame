@@ -11,13 +11,6 @@ enum PlayerState
     GAMEOVER
 }
 
-[System.Serializable]
-struct DeathAnimations
-{
-	public string killerTag;
-	public PlayableAsset killerAnim;
-}
-
 public class Character : MonoBehaviour
 {
     [HideInInspector]
@@ -27,14 +20,10 @@ public class Character : MonoBehaviour
     [HideInInspector]
     public float speedMultiplier = 1f;
 
-    //[HideInInspector]
-    //public ScriptableItem currentItem = null;
-
     [SerializeField]
     private float speed = 1f, jumpForce = 1f, runSpeedMultiplier = 1f;
 
-	[SerializeField]
-	private DeathAnimations[] piggyDeaths;
+	public AudioSource jumpSource, landSource, SquickSource, StepSource;
 
 	private TriggerInput triggerInputRef = null;
 	private PlayableDirector piggyDirector = null;
@@ -172,5 +161,15 @@ public class Character : MonoBehaviour
 		{
 			piggyAnimator.Play("Falling");
 		}
+	}
+
+	public void PlaySquickSound()
+	{
+		SquickSource.Play();
+	}
+
+	public void PlayStepSound()
+	{
+		StepSource.Play();
 	}
 }
