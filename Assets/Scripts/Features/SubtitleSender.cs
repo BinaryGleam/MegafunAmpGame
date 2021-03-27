@@ -97,8 +97,14 @@ public class SubtitleSender : MonoBehaviour
                     }
                     else if (chrono > fadeOutTime)
                     {
-                        textBoxRef.color = new Color(textColor.r, textColor.g, textColor.b, 0f);
+                        if (onSubtitleEnd != null)
+                        {
+                            Debug.Log("on end");
+                            onSubtitleEnd.Invoke();
+                        }
 
+                        textBoxRef.color = new Color(textColor.r, textColor.g, textColor.b, 0f);
+                        
                         if (destroysWhenDone)
                             Destroy(this);
 
