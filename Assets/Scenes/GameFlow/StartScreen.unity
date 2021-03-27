@@ -2226,6 +2226,30 @@ PrefabInstance:
       propertyPath: m_BlockingMask.m_Bits
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8265932487816637625, guid: 238f46bbee7e7bc4db7a69bf8efcac58, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8265932487816637625, guid: 238f46bbee7e7bc4db7a69bf8efcac58, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8265932487816637625, guid: 238f46bbee7e7bc4db7a69bf8efcac58, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 452.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 8265932487816637625, guid: 238f46bbee7e7bc4db7a69bf8efcac58, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -70.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 8265932487816637625, guid: 238f46bbee7e7bc4db7a69bf8efcac58, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8265932487816637625, guid: 238f46bbee7e7bc4db7a69bf8efcac58, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -11.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8265932487816637626, guid: 238f46bbee7e7bc4db7a69bf8efcac58, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -2273,6 +2297,22 @@ PrefabInstance:
     - target: {fileID: 8265932487816637626, guid: 238f46bbee7e7bc4db7a69bf8efcac58, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8265932487816637627, guid: 238f46bbee7e7bc4db7a69bf8efcac58, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8265932487816637627, guid: 238f46bbee7e7bc4db7a69bf8efcac58, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c108969192ed0834ea658b2450c21fb1, type: 3}
+    - target: {fileID: 8265932487816637627, guid: 238f46bbee7e7bc4db7a69bf8efcac58, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8265932487845174888, guid: 238f46bbee7e7bc4db7a69bf8efcac58, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8265932489505465992, guid: 238f46bbee7e7bc4db7a69bf8efcac58, type: 3}
       propertyPath: m_Name
