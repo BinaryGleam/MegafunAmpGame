@@ -27,6 +27,7 @@ public class SubtitleSender : MonoBehaviour
 
     [Header("Text")]
     [SerializeField]
+    [TextArea]
     private string msg = "Empty";
     [SerializeField]
     private Color textColor = Color.white;
