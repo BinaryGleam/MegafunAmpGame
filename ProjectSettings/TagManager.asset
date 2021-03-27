@@ -3,19 +3,29 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Piggy
+  - PiggyTrigger
+  - ButcherLayer
+  - TriggerPoint
+  - PatrollingPoints
+  - Point1
+  - Point2
+  - PatrolPoint
+  - Butcher
+  - PatrolLayer
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - FeatureBlocker
+  - PlayerOnly
+  - Player
+  - ButcherLayer
+  - Butcher
   - 
   - 
   - 
@@ -40,4 +50,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 638548041
+    locked: 0
+  - name: Playground
+    uniqueID: 2363778247
+    locked: 0
+  - name: Foreground
+    uniqueID: 3400323151
+    locked: 0
+  - name: UI
+    uniqueID: 131348087
     locked: 0
