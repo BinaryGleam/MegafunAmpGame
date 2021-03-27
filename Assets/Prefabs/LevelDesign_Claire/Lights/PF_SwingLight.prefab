@@ -953,7 +953,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 20
+  m_Mass: 2
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 2
@@ -1003,7 +1003,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0.13}
   m_ConnectedAnchor: {x: 0, y: -0.065}
   m_AutoConfigureDistance: 1
-  m_Distance: 1.7205507
+  m_Distance: 1.720551
   m_MaxDistanceOnly: 1
 --- !u!212 &6873342953099406924
 SpriteRenderer:
@@ -1298,10 +1298,10 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 1
-  m_Color: {r: 1, g: 0.7856449, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.14862043, b: 0, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0.679
-  m_ApplyToSortingLayers: 0000000049780f26c764e48c4fd0acca7736d407
+  m_ApplyToSortingLayers: 0000000049780f26c764e48c4fd0acca
   m_LightCookieSprite: {fileID: 21300000, guid: 433c4fcb38a33cd449d41303f8464c8a, type: 3}
   m_UseNormalMap: 0
   m_LightOrder: 0
